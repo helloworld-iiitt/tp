@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+      <loc>https://www.ecelliitk.org/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.95</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/ca</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/tedx</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.85</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/sip</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.85</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart/biz.html</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart/socha.html</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart/delhi.html</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.75</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart/bangalore.html</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.75</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart/associates.html</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart/incentives.html</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.ecelliitk.org/esummit/upstart/faq.html</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+</urlset>
