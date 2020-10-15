@@ -2753,6 +2753,9 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 #contact button.submitform:focus {
   background: #f89e0f;
 }
+.cnt-bot>a:hover{
+color:rgb(255,255,255,0.8);
+}
 
 #message-warning,
 #message-success {
