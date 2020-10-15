@@ -1,83 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-   <url>
-      <loc>https://www.ecelliitk.org/</loc>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.95</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/ca</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/tedx</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.85</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/sip</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.85</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart/biz.html</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart/socha.html</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart/delhi.html</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.75</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart/bangalore.html</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.75</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart/associates.html</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart/incentives.html</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-   </url>
-
-   <url>
-      <loc>https://www.ecelliitk.org/esummit/upstart/faq.html</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-   </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>http://placement.iiitt.ac.in/</loc>
+<lastmod>2020-10-15T14:46:40+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>http://placement.iiitt.ac.in/index.html</loc>
+<lastmod>2020-10-15T14:46:40+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://placement.iiitt.ac.in/docs/Placement%20Brochure%20IIIT%20Trichy.pdf</loc>
+<lastmod>2020-10-15T10:33:56+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
