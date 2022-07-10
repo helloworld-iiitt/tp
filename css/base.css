@@ -441,6 +441,9 @@ textarea {
   [class*="col-"] {
     padding: 0 18px;
   }
+  .align-center{
+    margin-left:0;
+  }
 }
 /* ------------------------------------------------------------------- 
  * tablets - (_grid.scss)
@@ -796,11 +799,7 @@ textarea {
   float: right;
 }
 
-.align-center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+
 .profile-card{
             position:relative;
             overflow: hidden;
