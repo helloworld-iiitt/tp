@@ -4,8 +4,8 @@ import { locations } from './data'
 
 export default function HowToReach() {
     return (
-        <div>
-            <h1 className='md:text-5xl text-3xl text-green-500 font-semibold text-center pb-10'>HOW TO REACH?</h1>
+        <div className='my-10'>
+            <h1 className='md:text-4xl text-2xl text-green-500 font-semibold text-center pb-10'>HOW TO REACH?</h1>
 
             <div className='flex flex-wrap gap-4 items-start justify-center'>
                 {

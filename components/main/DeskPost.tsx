@@ -7,10 +7,10 @@ export default function DeskPost() {
             <div className='grid lg:grid-cols-3 items-center justify-items-center gap-2 my-20'>
                 <section className='group/dir-img relative'>
                     {/* <h1 className='text-green-500 font-bold text-2xl text-center pb-2 border-b'>Updates</h1> */}
-                    <Image src='/logo.png' alt='director' width={300} height={300}
-                        className='rounded-full w-[200px] lg:w-[300px]' />
+                    <Image src='/teams/director.png' alt='director' width={300} height={300}
+                        className='rounded-md w-[200px] lg:w-[300px]' />
 
-                    <div className='group-hover/dir-img:visible absolute bottom-0 left-0 z-10 invisible'>
+                    <div className='group-hover/dir-img:visible bg-white p-4 rounded-e-md bg-opacity-60 absolute bottom-0 left-0 z-10 invisible'>
                         <h1 className='text-green-500 font-bold text-lg text-center mb-2'>DR. NARASIMHA SARMA NVS</h1>
                         <p className='text-sm text-gray-600'>
                             Director, IIIT, Tiruchirappalli
@@ -71,11 +71,11 @@ export default function DeskPost() {
                         give an opportunity to present their abilities.
                     </p>
                 </section>
-                <section className='group/dir-img relative '>
-                    <Image src='/logo.png' alt='director' width={300} height={300}
-                        className='rounded-full w-[200px] lg:w-[300px]' />
+                <section className='group/dir-img relative md:order-2 order-1'>
+                    <Image src='/teams/devasena1.jpg' alt='director' width={300} height={300}
+                        className='rounded-md w-[200px] lg:w-[300px]' />
 
-                    <div className='group-hover/dir-img:visible absolute bottom-0 left-0 z-10 invisible'>
+                    <div className='group-hover/dir-img:visible bg-white bg-opacity-60  p-4 rounded-e-md absolute bottom-0 left-0 z-10 invisible'>
                         <h1 className='text-green-500 font-bold text-lg text-center mb-2'>DR. G. DEVASENA</h1>
                         <p className='text-sm text-gray-600'>
                             Placement Coordinator, Tiruchirappalli

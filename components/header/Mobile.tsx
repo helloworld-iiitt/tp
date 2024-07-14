@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import {
     Sheet,
@@ -13,8 +14,10 @@ function classNames(...classes: string[]) {
 
 
 export default function Mobile() {
+    const [open, setOpen] = React.useState(false);
+
     return (
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger>
                 <Menu />
             </SheetTrigger>
@@ -30,6 +33,7 @@ export default function Mobile() {
                                     'px-3 text-15px font-medium space-links text-xl'
                                 )}
                                 aria-current={item.href ? 'page' : undefined}
+                                onClick={() => setOpen(false)}
                             >
                                 {item.name}
                             </Link>

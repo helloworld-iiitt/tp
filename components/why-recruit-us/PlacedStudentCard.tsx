@@ -16,10 +16,10 @@ export default function PlacedStudentCard() {
                             <CarouselItem key={index} className="md:basis-1/4 lg:basis-1/6">
                                 <div className="p-0">
                                     <Card>
-                                        <CardContent className="flex aspect-auto flex-col justify-center py-3 px-4 gap-2">
+                                        <CardContent className="flex aspect-auto flex-col justify-center items-center md:items-start py-3 px-4 gap-2">
                                             <div className="h-16 w-16 object-cover rounded-full relative  shadow-md">
                                                 <Image
-                                                    src={'/logo.png'}
+                                                    src={'/teams/logo.png'}
                                                     alt={student.name}
                                                     fill
                                                     className="h-16 w-16 object-cover rounded-full"

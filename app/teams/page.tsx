@@ -5,7 +5,7 @@ import React from 'react'
 export default function page() {
     return (
         <div className=''>
-            <div className='container  mt-20'>
+            <div className='container  md:mt-20'>
                 <h1 className='text-2xl text-center my-8'>HEAD & OFFICER</h1>
                 <section className='flex justify-center flex-wrap gap-4'>
                     {
@@ -19,7 +19,7 @@ export default function page() {
                                 email={head.email}
                                 phone={head.phone}
                                 linkedinUrl={head.linkedinUrl}
-                                githubUrl={head.githubUrl}
+                            // githubUrl={head.githubUrl}
                             />
                         )
                     }
@@ -40,7 +40,7 @@ export default function page() {
                                 email={head.email}
                                 phone={head.phone}
                                 linkedinUrl={head.linkedinUrl}
-                                githubUrl={head.githubUrl}
+                            // githubUrl={head.githubUrl}
                             />
                         )
                     }

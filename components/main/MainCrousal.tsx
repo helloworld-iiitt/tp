@@ -11,6 +11,8 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import OnCrousalContent from './OnCrousalContent';
+import { mainCrousalImg } from './data';
+import Image from 'next/image';
 
 export default function MainCrousal() {
     const plugin = React.useRef(
@@ -26,22 +28,30 @@ export default function MainCrousal() {
                 onMouseLeave={plugin.current.reset}
             >
                 <CarouselContent>
-                    {Array.from({ length: 5 }).map((_, index) => (
-                        <CarouselItem key={index}>
-                            <div className="p-1">
-                                <Card>
-                                    <CardContent className="flex  h-[70vh] aspect-video- items-center justify-center p-6">
-                                        <span className="text-4xl font-semibold">{index + 1}</span>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </CarouselItem>
-                    ))}
+                    {
+                        mainCrousalImg.map((imgUrl, index) => (
+                            <CarouselItem key={index}>
+                                <div className="p-1-">
+                                    <Card className='border-0'>
+                                        <CardContent className="flex aspect-video- relative h-[80vh]  items-center justify-center p-6">
+                                            <Image
+                                                src={imgUrl}
+                                                alt="crousal"
+                                                fill
+                                                className='object-cover'
+                                            />
+                                            <div className='bg-gray-200 opacity-30 absolute inset-0'></div>
+                                        </CardContent>
+                                    </Card>
+                                </div>
+                            </CarouselItem>
+                        ))
+                    }
                 </CarouselContent>
-                <div className='hidden md:absolute top-[50%] left-20'>
+                <div className='hidden md:block z-10 absolute top-[50%] left-20'>
                     <CarouselPrevious />
                 </div>
-                <div className='hidden md:absolute top-[50%] right-20'>
+                <div className='hidden md:block z-10 absolute top-[50%] right-20'>
                     <CarouselNext />
                 </div>
                 <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
