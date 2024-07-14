@@ -1,0 +1,9 @@
+.circle {
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.circlehover {
+  border-radius:0;  
+  cursor: pointer;
+}
