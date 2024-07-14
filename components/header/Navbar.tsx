@@ -2,8 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import { Globe } from 'lucide-react';
-import useIntersectionObserver from '@/hooks/useIntersectionObserver';
-
+import { quickLink1s } from '../footer/Footer';
 
 interface NavigationItem {
     name: string;
@@ -11,7 +10,7 @@ interface NavigationItem {
     current: boolean;
 }
 
-const navigation: NavigationItem[] = [
+export const navigation: NavigationItem[] = [
     { name: 'Home', href: '/', current: true },
     { name: 'About Us', href: '#about-us', current: false },
     { name: 'Why Recruit@IIITT', href: '#why-recruit@IIITT', current: false },
@@ -55,11 +54,20 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
                         <h3 className='text-green-500 text-sm'>An Institute of National Importance, established by MHRD</h3>
                     </section>
                 </div>
-                <div className='md:pe-10'>
-                    <Link href={"http://iiitt.ac.in/"} className='flex items-center gap-1'>
+                <div className='md:pe-10 flex gap-3'>
+                    <Link href={"http://iiitt.ac.in"} className='flex items-center '>
                         <Globe className='h-4' />
                         iiitt.ac.in
                     </Link>
+                    {
+                        quickLink1s.map((item, index) => (
+                            <Link key={index} href={item.href} className='flex items-center '>
+                                {item.icon}
+                                {item.title}
+                            </Link>
+                        )
+                        )
+                    }
                 </div>
             </div>
 

@@ -1,80 +1,128 @@
 import Link from "next/link";
+import { navigation } from "../header/Navbar";
+import { ArrowDownToLine, FileText, Globe, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import Image from "next/image";
 
-// MIDDLE LINKS DATA
-interface ProductType {
-    id: number;
-    section: string;
-    link: string[];
-}
-
-const products: ProductType[] = [
+export const quickLink1s = [
     {
-        id: 1,
-        section: "Company",
-        link: ['About us', 'Blog', 'Contact us', 'Pricing', 'Testimonials'],
+        icon: <Mail className='h-4' />,
+        href: "",
+        title: "Email Us"
     },
     {
-        id: 2,
-        section: "Support",
-        link: ['Help center', 'Terms of service', 'Legal', 'Privacy Policy', 'Status']
-    }
+        icon: <Phone className='h-4' />,
+        href: "",
+        title: "Phone"
+    },
+    {
+        icon: <Linkedin className='h-4' />,
+        href: "",
+        title: "Linkedin"
+    },
+    {
+        icon: <Twitter className='h-4' />,
+        href: "",
+        title: "Twitter"
+    },
+];
+
+const quickLink2s = [
+    {
+        icon: <FileText className='h-4' />,
+        href: "CONTACT US",
+        title: "BROCHURE"
+    },
+    {
+        icon: <ArrowDownToLine className='h-4' />,
+        href: "",
+        title: "PLACEMENT DETAILS"
+    },
+    {
+        icon: <Globe className='h-4' />,
+        href: "http://iiitt.ac.in/",
+        title: "iiitt.ac.in"
+    },
 ]
 
 const Footer = () => {
     return (
-        <div className="bg-bgpurple -mt-64" id="first-section">
-            <div className="mx-auto max-w-2xl pt-64 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+        <div className="bg-gray-50 py-10">
+            <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+                <div className="grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
 
-                    <div className='col-span-4'>
-                        {/* <img src={'/assets/logo/Logo2.svg'} alt="logo" className='pb-4' /> */}
-                        <h3 className='text-white text-lg font-medium leading-9 mb-4 lg:mb-20'> Level up your skills, and get dream <br /> job with passion. </h3>
-                        <div className='flex gap-4'>
-                            {/* <Link href="/"><img src={'/assets/footer/insta.svg'} alt="instagram" className='footer-icons' /></Link>
-                            <Link href="/"><img src={'/assets/footer/dribble.svg'} alt="dribble" className='footer-icons' /></Link>
-                            <Link href="/"><img src={'/assets/footer/twitter.svg'} alt="twitter" className='footer-icons' /></Link>
-                            <Link href="/"><img src={'/assets/footer/youtube.svg'} alt="youtube" className='footer-icons' /></Link> */}
+                    <div className='col-span-2'>
+                        {/* <h3 className=''> Learn, Grow,  Evolve. </h3> */}
+                        <div className='relative w-full h-[200px]'>
+                            <Image
+                                src={'/footer/google-map.png'}
+                                alt="logo"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                        <div className="mt-2">
+                            <h1>
+                                Mailing Address
+                            </h1>
+                            <p className="text-sm">
+                                Indian Institute of Information Technology Tiruchirappalli,
+                                Sethurapatti, Trichy-Madurai Highway,
+                                Tiruchirappalli, Tamil Nadu - 620012
+                            </p>
                         </div>
                     </div>
 
-                    {/* CLOUMN-2/3 */}
+                    {/* CLOUMN-3/5 */}
 
-                    {products.map((product) => (
-                        <div key={product.id} className="group relative col-span-2">
-                            <p className="text-white text-xl font-semibold mb-9">{product.section}</p>
-                            <ul>
-                                {product.link.map((link: string, index: number) => (
-                                    <li key={index} className='mb-5'>
-                                        <Link href="/" className="text-offwhite text-sm font-normal mb-6 space-links">{link}</Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+                    <ul className="group relative col-span-1">
+                        <li className="mb-2 ">Socials</li>
 
-                    {/* CLOUMN-4 */}
+                        {
+                            quickLink1s.map((nav, index) => (
+                                <li key={index} className='mb-5'>
+                                    <Link href={nav.href} className="text-offwhite text-sm font-normal mb-6 space-links flex gap-2 items-center">{nav.icon} {nav.title}</Link>
+                                </li>
+                            ))}
+                    </ul>
 
-                    <div className='col-span-4'>
-                        <h3 className='text-white text-xl font-semibold mb-6'>Stay up to date</h3>
-                        <div className="relative text-white focus-within:text-white flex flex-row-reverse">
-                            <input type="Email address" name="q" className="py-4 text-sm w-full text-white bg-gray-900 rounded-md pl-4 focus:outline-none bg-emailbg focus:text-white" placeholder="Your email address" autoComplete="off" />
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2">
-                                <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
-                                    {/* <img src={'/assets/footer/inputIcon.svg'} alt="inputicon" /> */}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    {/* CLOUMN-4/5 */}
+
+                    <ul className="group relative col-span-1">
+                        <li className="mb-2 ">Navigations</li>
+                        {
+                            navigation.map((nav, index) => (
+                                <li key={index} className='mb-5'>
+                                    <Link href={nav.href} className="text-offwhite text-sm font-normal mb-6 space-links">{nav.name}</Link>
+                                </li>
+                            ))
+                        }
+                    </ul>
+
+
+
+                    {/* CLOUMN-5 */}
+
+                    <ul className="group relative col-span-1">
+                        <li className="mb-2 ">Quick Links</li>
+
+                        {
+                            quickLink2s.map((nav, index) => (
+                                <li key={index} className='mb-5'>
+                                    <Link href={nav.href} className="text-offwhite text-sm font-normal mb-6 space-links flex gap-2 items-center">{nav.icon} {nav.title}</Link>
+                                </li>
+                            ))}
+                    </ul>
 
                 </div>
             </div>
 
             {/* All Rights Reserved */}
 
-            <div className='pb-24 px-4'>
-                <h3 className='text-center text-offwhite'>@2023 - All Rights Reserved by <Link href="https://adminmart.com/" target="_blank"> Adminmart.com</Link></h3>
+            <div className='px-4'>
+                <h3 className='text-center text-offwhite'>@2024 - All Rights Reserved</h3>
+                <h3 className='text-center text-offwhite'>Made with love by Training & Placement Cell IIITT</h3>
             </div>
 
         </div>
