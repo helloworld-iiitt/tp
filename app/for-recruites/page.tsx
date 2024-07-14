@@ -1,3 +1,4 @@
+import HowToReach from '@/components/for-recruiters/HowToReach'
 import PlacemenrProcedure from '@/components/for-recruiters/PlacemenrProcedure'
 import Statistics from '@/components/why-recruit-us/Statistics'
 import Image from 'next/image'
@@ -20,6 +21,8 @@ export default function page() {
                 <Statistics />
 
                 <PlacemenrProcedure />
+
+                <HowToReach />
             </section>
         </div>
     )

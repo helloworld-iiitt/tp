@@ -1,4 +1,4 @@
-import { Footprints } from "lucide-react";
+import { Airplay, Bus, Car, Footprints, Plane, Train } from "lucide-react";
 
 export const produreSteps = [
     {
@@ -40,5 +40,24 @@ export const produreSteps = [
         icon: <Footprints />,
         step: 8,
         description: "The Training and Placement Office, IIITT also coordinates the signing of offer letters by the students selected to ensure that they reach the organization/company as soon as possible"
+    },
+]
+
+export const locations = [
+    {
+        icon: <Car className='h-10 w-10 text-gray-600' />,
+        descp: "We are a 20-minute drive from Tiruchirappalli Junction/Central Bus stand on the Tiruchirappalli-Madurai Highway to IIIT Tiruchirappalli."
+    },
+    {
+        icon: <Bus className='h-10 w-10 text-gray-600' />,
+        descp: "Tiruchirappalli is also well-connected to the other cities of Tamil Nadu, southern Karnataka and Kerala through Govt./Private buses."
+    },
+    {
+        icon: <Train className='h-10 w-10 text-gray-600' />,
+        descp: "Tiruchirappalli is a critical junction on the Souther Railway. It connects Chennai, Thanjavur, Madurai, Tirupati, Rameshwaram, Bengaluru, Coimbature, Kolkata, Jammu, New Delhi, Cochin and Manglaore."
+    },
+    {
+        icon: <Plane className='h-10 w-10 text-gray-600' />,
+        descp: "It has an international airport connected with Chennai, Dubai, Kuala Lumpur, Singapore and Colombo."
     },
 ]
