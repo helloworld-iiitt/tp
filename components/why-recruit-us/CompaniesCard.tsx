@@ -8,7 +8,7 @@ export default function CompaniesCard() {
     return (
         <div className='my-20'>
             <h1 className='font-semibold text-center text-3xl my-6'>Our Recruiters</h1>
-            <p className='text-center text-xl w-[80%] mx-auto'>Our students have been placed in some of the top companies in the world. Here are some of the companies that have recruited our students.</p>
+            <p className='md:text-center text-justify md:text-xl md:w-[80%] mx-auto'>Our students have been placed in some of the top companies in the world. Here are some of the companies that have recruited our students.</p>
             <section className='rounded-md  w-full bg-gray-50'>
 
                 <Marquee pauseOnHover

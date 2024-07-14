@@ -65,14 +65,14 @@ const perPlaced = (pieChartData[0].count / pieChartData.reduce((acc, curr) => ac
 export default function Statistics() {
 
     return (
-        <div>
+        <div className="mb-10">
             <Card className="">
                 <CardHeader>
                     <CardTitle>Statistics</CardTitle>
                     <CardDescription>Batch 2024-25 (in LPA)</CardDescription>
                 </CardHeader>
                 <CardContent className="flex">
-                    <ChartContainer config={chartConfig} className="h-[60vh]">
+                    <ChartContainer config={chartConfig} className="h-[160px] md:h-[60vh]">
                         <BarChart accessibilityLayer data={chartData} className="">
                             {/* <YAxis
                                 dataKey="month"

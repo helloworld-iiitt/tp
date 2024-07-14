@@ -30,7 +30,7 @@ export default function ClubCard() {
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1-">
                                     <Card>
-                                        <CardContent className="flex aspect-square- items-start justify-center md:px-8 md:py-6 min-h-[440px]">
+                                        <CardContent className="flex aspect-square- items-start justify-center py-4 md:px-8 md:py-6 min-h-[440px]">
                                             <div className="w-[300px]- flex flex-col items-center justify-center space-y-4">
                                                 {card.icon}
                                                 <h1 className='text-xl'>{card.title}</h1>

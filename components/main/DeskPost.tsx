@@ -19,7 +19,7 @@ export default function DeskPost() {
                 </section>
                 <section className='lg:col-span-2'>
                     <h1 className='text-green-500 font-bold text-2xl text-center mb-2'>FROM THE DIRECTOR’S DESK</h1>
-                    <p className='text-base text-gray-600'>
+                    <p className='text-base text-justify text-gray-600'>
                         Indian Institute of Information Technology Tiruchirappalli (IIITT) is an
                         initiative under the Public Private Partnership (PPP) model with a
                         primary focus on addressing the challenges faced by the Indian IT
@@ -49,10 +49,10 @@ export default function DeskPost() {
                     </p>
                 </section>
             </div>
-            <div className='grid lg:grid-cols-3 items-center justify-items-center gap-2 my-32'>
-                <section className='lg:col-span-2'>
+            <div className='grid lg:grid-cols-3 items-center justify-items-center gap-2 md:my-32'>
+                <section className='lg:col-span-2 md:order-1 order-2'>
                     <h1 className='text-green-500 font-bold text-2xl text-center mb-2'>FROM THE TPO</h1>
-                    <p className='text-base text-gray-600'>
+                    <p className='text-base text-justify text-gray-600'>
                         The Training and Placement Cell of IIITT provides intensive opportunity
                         through encouraging students to participate in trainings and workshops
                         to develop their professional and soft skills. The rigorous training as
@@ -71,7 +71,7 @@ export default function DeskPost() {
                         give an opportunity to present their abilities.
                     </p>
                 </section>
-                <section className='group/dir-img relative'>
+                <section className='group/dir-img relative '>
                     <Image src='/logo.png' alt='director' width={300} height={300}
                         className='rounded-full w-[200px] lg:w-[300px]' />
 

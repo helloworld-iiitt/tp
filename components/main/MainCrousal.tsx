@@ -38,10 +38,10 @@ export default function MainCrousal() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <div className='absolute top-[50%] left-20'>
+                <div className='hidden md:absolute top-[50%] left-20'>
                     <CarouselPrevious />
                 </div>
-                <div className='absolute top-[50%] right-20'>
+                <div className='hidden md:absolute top-[50%] right-20'>
                     <CarouselNext />
                 </div>
                 <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>

@@ -48,11 +48,11 @@ const Footer = () => {
     return (
         <div className="bg-gray-50 py-10">
             <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+                <div className="grid justify-items-center md:justify-items-start grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
 
-                    <div className='col-span-2'>
+                    <div className='md:col-span-2'>
                         {/* <h3 className=''> Learn, Grow,  Evolve. </h3> */}
                         <div className='relative w-full h-[200px]'>
                             <Image
@@ -62,7 +62,7 @@ const Footer = () => {
                                 className="object-contain"
                             />
                         </div>
-                        <div className="mt-2">
+                        <div className="mt-2 md:text-start text-center">
                             <h1>
                                 Mailing Address
                             </h1>
