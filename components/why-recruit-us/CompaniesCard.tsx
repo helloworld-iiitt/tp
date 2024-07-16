@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import Marquee from 'react-fast-marquee';
-import { companies } from './data';
+import { companies, companies1, companies2 } from './data';
 import Image from 'next/image';
 
 export default function CompaniesCard() {
@@ -34,7 +34,7 @@ export default function CompaniesCard() {
                     className='flex justify-evenly gap-2 items-center'
                 >
                     {
-                        companies.map((company, index) => (
+                        companies1.map((company, index) => (
                             <div key={index} className='mx-10 h-32 w-32 relative'>
                                 <Image
                                     src={company}
@@ -51,7 +51,7 @@ export default function CompaniesCard() {
                     className='flex justify-evenly gap-2 items-center'
                 >
                     {
-                        companies.map((company, index) => (
+                        companies2.map((company, index) => (
                             <div key={index} className='m-10 h-32 w-32 relative'>
                                 <Image
                                     src={company}

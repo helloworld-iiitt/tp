@@ -1,7 +1,8 @@
-import HowToReach from '@/components/for-recruiters/HowToReach'
 import PlacemenrProcedure from '@/components/for-recruiters/PlacemenrProcedure'
+import { Button } from '@/components/ui/button'
 import Statistics from '@/components/why-recruit-us/statistic/Statistics'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function page() {
@@ -22,7 +23,21 @@ export default function page() {
 
                 <PlacemenrProcedure />
 
-                <HowToReach />
+
+                <div className='w-full h-[400px] relative'>
+                    <Image
+                        src="/contact/contact-us.png"
+                        fill
+                        className='object-contain'
+                        alt='contact us'
+                    />
+                </div>
+
+                <div className='text-center'>
+                    <Link href='/contact-us'>
+                        <Button className='bg-green-600 hover:bg-green-400 w-[60%]'>Contact Us</Button>
+                    </Link>
+                </div>
             </section>
         </div>
     )

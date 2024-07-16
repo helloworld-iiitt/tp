@@ -54,15 +54,52 @@ export const clubCards = [
 ];
 
 
+// export const companies = [
+// 	"/logo.png",
+// 	"/logo.png",
+// 	"/logo.png",
+// 	"/logo.png",
+// 	"/logo.png",
+// 	"/logo.png",
+// 	"/logo.png",
+// ]
+
 export const companies = [
-	"/logo.png",
-	"/logo.png",
-	"/logo.png",
-	"/logo.png",
-	"/logo.png",
-	"/logo.png",
-	"/logo.png",
+	"/companies/Tejas_Networks_Logo.jpg",
+	"/companies/ip-tronk.png",
+	"/companies/quantum-phinance.png",
+	"/companies/adp.png",
+	"/companies/juspay.png",
+	"/companies/ramco.png",
+	"/companies/amazon.png",
+	"/companies/landmark-group.png",
+	"/companies/razor-group.png",
 ]
+export const companies1 = [
+	"/companies/cgi.png",
+	"/companies/mindtree.png",
+	"/companies/ruminds.png",
+	"/companies/codetantra.png",
+	"/companies/modelon.png",
+	"/companies/simemens.png",
+	"/companies/cognizant.png",
+	"/companies/navitas.png",
+	"/companies/tcs.png",
+	"/companies/elcot.png",
+	"/companies/nvidia.png",
+]
+export const companies2 = [
+	"/companies/value-labs.png",
+	"/companies/epam.png",
+	"/companies/optum.png",
+	"/companies/virtusa.png",
+	"/companies/ibm.png",
+	"/companies/paytm.png",
+	"/companies/infosys.png",
+	"/companies/publicic-sapient.png"
+];
+
+
 
 export const topPlacedStudents = [
 	{
