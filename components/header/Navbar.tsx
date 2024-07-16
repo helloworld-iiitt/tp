@@ -29,10 +29,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
         const htmlElement = document.querySelector('html');
         if (!htmlElement) return;
         const dataScrollValue = htmlElement.getAttribute('data-scroll');
-        if (dataScrollValue) {
-            console.log(dataScrollValue);
-
-        }
+        //    eslint-disable-next-line
     }, []);
 
     return (
@@ -59,7 +56,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
                     </Link>
                     {
                         quickLink1s.map((item, index) => (
-                            <Link key={index} href={item.href} className='flex items-center '>
+                            <Link key={index} href={item.href} target='_blank' className='flex items-center '>
                                 {item.icon}
                                 {item.title}
                             </Link>

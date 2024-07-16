@@ -38,9 +38,9 @@ export default function MainCrousal() {
                                                 src={imgUrl}
                                                 alt="crousal"
                                                 fill
-                                                className='object-cover'
+                                                className='object-cover bg-blend-lighten- opacity-75- '
                                             />
-                                            <div className='bg-gray-200 opacity-30 absolute inset-0'></div>
+                                            <div className='bg-gray-200- absolute inset-0' style={{ background: "rgba(0,0,0,0.5)" }}></div>
                                         </CardContent>
                                     </Card>
                                 </div>

@@ -6,22 +6,22 @@ import Image from "next/image";
 export const quickLink1s = [
     {
         icon: <Mail className='h-4' />,
-        href: "",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=placement@iiitt.ac.in",
         title: "Email Us"
     },
     {
         icon: <Phone className='h-4' />,
-        href: "",
+        href: "https://api.whatsapp.com/send?phone=9042473621",
         title: "Phone"
     },
     {
         icon: <Linkedin className='h-4' />,
-        href: "",
+        href: "https://www.linkedin.com/in/placement-cell-iiit-trichy",
         title: "Linkedin"
     },
     {
         icon: <Twitter className='h-4' />,
-        href: "",
+        href: "https://twitter.com/IIITTrichy",
         title: "Twitter"
     },
 ];
