@@ -7,17 +7,17 @@ export const quickLink1s = [
     {
         icon: <Mail className='h-4' />,
         href: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=placement@iiitt.ac.in",
-        title: "Email Us"
+        title: "placement@iiitt.ac.in"
     },
     {
         icon: <Phone className='h-4' />,
         href: "https://api.whatsapp.com/send?phone=9042473621",
-        title: "Phone"
+        title: "+91 9042473621"
     },
     {
         icon: <Linkedin className='h-4' />,
-        href: "https://www.linkedin.com/in/placement-cell-iiit-trichy",
-        title: "Linkedin"
+        href: "https://www.linkedin.com/in/tnp-cell-iiit-tiruchirappalli",
+        title: "@tnp-cell-iiit-tiruchirappalli"
     },
     {
         icon: <Twitter className='h-4' />,
@@ -46,47 +46,52 @@ const quickLink2s = [
 
 const Footer = () => {
     return (
-        <div className="bg-gray-50 pt-10">
-            <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div className="grid justify-items-center md:justify-items-start grid-cols-1 gap-y-5 gap-x-16 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+        <div id="contact-us" className="bg-gray-50 ">
+            {/* <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8"> */}
+            <div className="container py-16 grid justify-items-center md:justify-items-start md:grid-cols-2 gap-x-20  gap-y-4 md:gap-y-0">
 
-                    {/* COLUMN-1 */}
-
-                    <div className='md:col-span-2'>
-                        {/* <h3 className=''> Learn, Grow,  Evolve. </h3> */}
-                        <div className="rounded-lg overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8361008171855!2d78.58886247781727!3d10.669826934030871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa8d475370d8ff%3A0x28b98720c32abaa8!2sIndian%20Institute%20of%20Information%20Technology%20Tiruchirappalli!5e0!3m2!1sen!2sin!4v1720981113714!5m2!1sen!2sin"
-                                width="100%" height="200" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div className="mt-2 md:text-start text-center">
-                            <h1>
-                                Mailing Address
-                            </h1>
-                            <p className="text-sm">
-                                Indian Institute of Information Technology Tiruchirappalli,
-                                Sethurapatti, Trichy-Madurai Highway,
-                                Tiruchirappalli, Tamil Nadu - 620012
-                            </p>
-                        </div>
+                <section className="grid md:grid-cols-2 items-center gap-x-20 gap-y-4 md:gap-y-0 w-full">
+                    <div className="rounded-lg overflow-hidden w-full">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8361008171855!2d78.58886247781727!3d10.669826934030871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa8d475370d8ff%3A0x28b98720c32abaa8!2sIndian%20Institute%20of%20Information%20Technology%20Tiruchirappalli!5e0!3m2!1sen!2sin!4v1720981113714!5m2!1sen!2sin"
+                            width="100%" height="200" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div className="md:hidden mt-2 text-center">
+                        <h1>
+                            Mailing Address
+                        </h1>
+                        <p className="text-sm">
+                            Indian Institute of Information Technology Tiruchirappalli,
+                            Sethurapatti, Trichy-Madurai Highway,
+                            Tiruchirappalli, Tamil Nadu - 620012
+                        </p>
                     </div>
 
-                    {/* CLOUMN-3/5 */}
-
-                    <ul className="group relative col-span-1 text-center md:text-start">
-                        <li className="mb-2 ">Socials</li>
+                    <ul className="relative  text-center md:text-start">
+                        <li className="mb-2 font-semibold">Socials</li>
 
                         {
                             quickLink1s.map((nav, index) => (
                                 <li key={index} className='md:mb-5'>
-                                    <Link href={nav.href} className="text-offwhite text-sm font-normal mb-4 md:mb-6 space-links flex gap-2 items-center">{nav.icon} {nav.title}</Link>
+                                    <Link href={nav.href} target="_blank" className="text-offwhite whitespace-nowrap text-sm font-normal justify-center md:justify-start  mb-4 md:mb-6 space-links flex gap-2 items-center">{nav.icon} {nav.title}</Link>
                                 </li>
                             ))}
                     </ul>
+                    <div className="hidden md:block mt-2 col-span-2 md:text-start text-center">
+                        <h1>
+                            Mailing Address
+                        </h1>
+                        <p className="text-sm">
+                            Indian Institute of Information Technology Tiruchirappalli,
+                            Sethurapatti, Trichy-Madurai Highway,
+                            Tiruchirappalli, Tamil Nadu - 620012
+                        </p>
+                    </div>
+                </section>
 
-                    {/* CLOUMN-4/5 */}
+                <section className="grid md:grid-cols-2 w-full  gap-y-4 md:gap-y-0">
 
-                    <ul className="group relative col-span-1 text-center md:text-start">
-                        <li className="mb-2 ">Navigations</li>
+                    <ul className="relative text-center md:text-start">
+                        <li className="mb-2 font-semibold">Navigations</li>
                         {
                             navigation.map((nav, index) => (
                                 <li key={index} className='mb-2 md:mb-5'>
@@ -96,29 +101,26 @@ const Footer = () => {
                         }
                     </ul>
 
-
-
-                    {/* CLOUMN-5 */}
-
-                    <ul className="group relative col-span-1 text-center md:text-start">
-                        <li className="mb-2 ">Quick Links</li>
+                    <ul className="relative text-center md:text-start">
+                        <li className="mb-2 font-semibold">Quick Links</li>
 
                         {
                             quickLink2s.map((nav, index) => (
                                 <li key={index} className='md:mb-5'>
-                                    <Link href={nav.href} className="text-offwhite text-sm font-normal mb-4 md:mb-6 space-links flex gap-2 items-center justify-center">{nav.icon} {nav.title}</Link>
+                                    <Link href={nav.href} className="text-offwhite text-sm font-normal whitespace-nowrap mb-4 md:mb-6 space-links flex justify-center md:justify-start gap-2 items-center">{nav.icon} {nav.title}</Link>
                                 </li>
                             ))}
                     </ul>
+                </section>
 
-                </div>
             </div>
+            {/* </div> */}
 
             {/* All Rights Reserved */}
 
-            <div className='px-4 bg-slate-400 py-4'>
+            <div className='px-4 bg-[#daf7a6] py-4 text-[0.75rem] font-semibold'>
                 <h3 className='text-center text-offwhite'>@2024 - All Rights Reserved</h3>
-                <h3 className='text-center text-offwhite'>Made with love by Training & Placement Cell IIITT</h3>
+                <h3 className='text-center text-offwhite'>🌟 Brought to You with Dedication by the Training & Placement Cell, IIIT Trichy 🌟</h3>
             </div>
 
         </div>

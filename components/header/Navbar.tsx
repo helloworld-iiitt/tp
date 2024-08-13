@@ -16,8 +16,8 @@ export const navigation: NavigationItem[] = [
     { name: 'About Us', href: '/#about-us', current: false },
     { name: 'Why Recruit@IIITT', href: '/#why-recruit@IIITT', current: false },
     { name: 'For Recruites', href: '/for-recruites', current: false },
-    { name: 'Teams', href: '/teams', current: false },
-    { name: 'Contact Us', href: '/contact-us', current: false },
+    { name: 'Teams', href: '/#teams', current: false },
+    { name: 'Contact Us', href: '/#contact-us', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -34,39 +34,34 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
 
     return (
         <>
-            <div className='flex justify-between items-center px-4'>
+            <div className='flex justify-between items-center px-2'>
+                <Link href="/" className='flex justify-center items-center md:px-4'>
 
-                <div className='flex gap-2 items-center  pt-2'>
-                    <section className='relative w-[40px] h-[40px] md:w-[60px] md:h-[60px]'>
-                        <Image
-                            src='/logo.png'
-                            alt='logo'
-                            fill
-                        />
-                    </section>
-                    <section>
-                        <h1 className='text-[0.6rem] md:text-lg font-semibold text-green-700'>Indian Institute of Information Technology, Tiruchirappalli (IIITT)</h1>
-                        <h3 className='text-green-500 text-[0.5rem] md:text-sm'>An Institute of National Importance, established by MHRD</h3>
-                    </section>
-                </div>
-                <div className='md:pe-10 md:flex gap-3 hidden'>
-                    <Link href={"http://iiitt.ac.in"} className='flex items-center '>
-                        <Globe className='h-4' />
-                        iiitt.ac.in
-                    </Link>
-                    {
-                        quickLink1s.map((item, index) => (
-                            <Link key={index} href={item.href} target='_blank' className='flex items-center '>
-                                {item.icon}
-                                {item.title}
-                            </Link>
-                        )
-                        )
-                    }
+                    <div className='flex items-center flex-col pt-2'>
+                        <div className='flex gap-1'>
+                            <section className='relative w-[50px] h-[50px] md:w-[60px] md:h-[60px]'>
+                                <Image
+                                    src='/logo.png'
+                                    alt='logo'
+                                    fill
+                                />
+                            </section>
+                            <section>
+                                <h1 className='text-base sm:text-xl md:text-[1.8rem] font-semibold text-green-700 text-center'>Training & Placement Cell</h1>
+                                <h1 className='text-[0.4rem] sm:text-[0.5rem] md:text-[0.75rem] font-semibold text-green-700 text-center'>Indian Institute of Information Technology, Tiruchirappalli (IIITT)</h1>
+                                <h3 className='text-green-500 text-[0.5rem] md:text-[0.65rem] text-center'>An Institute of National Importance, established by MHRD</h3>
+                            </section>
+                        </div>
+                    </div>
+                </Link >
+
+                <div className="md:hidden block">
+                    <Mobile />
                 </div>
             </div>
+            <hr className='w-full border mt-1 hidden md:block' />
 
-            <nav className={`mx-auto px-6 items-center lg:px-8 flex ${showImg ? "justify-between backdrop-blur-md shadow py-4" : "justify-end py-2"} sticky z-10 top-0`}>
+            <nav className={`mx-auto px-6 duration-300 items-center lg:px-8 flex ${showImg ? "justify-between backdrop-blur-md shadow py-4" : "justify-center py-2"} sticky z-10 top-0`}>
                 {/* LOGO */}
                 <Link href='/'>
                     <div className={` ${showImg ? "flex" : "hidden"} gap-2 items-center`}>
@@ -84,7 +79,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
                     </div>
                 </Link>
                 {/* LINKS */}
-                <div className="hidden relative md:flex items-center justify-end">
+                <div className="hidden relative md:flex items-center justify-center">
                     <div className="sm:ml-14">
                         <div className="flex space-x-4 hover:text-green-800">
                             {navigation.map((item) => (
@@ -104,7 +99,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
                     </div>
                 </div>
 
-                <div className='block md:hidden'>
+                <div className={` ${showImg ? "flex" : "hidden"} md:hidden block`}>
                     <Mobile />
                 </div>
 

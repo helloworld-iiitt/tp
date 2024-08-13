@@ -20,10 +20,11 @@ export default function MainCrousal() {
     )
 
     return (
-        <div>
+        <div className=''>
             <Carousel
                 plugins={[plugin.current]}
                 className="w-full relative"
+                style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >
@@ -32,15 +33,15 @@ export default function MainCrousal() {
                         mainCrousalImg.map((imgUrl, index) => (
                             <CarouselItem key={index}>
                                 <div className="p-1-">
-                                    <Card className='border-0'>
-                                        <CardContent className="flex aspect-video- relative h-[80vh]  items-center justify-center p-6">
+                                    <Card className='border-0 '>
+                                        <CardContent className="flex relative h-[90vh]  items-center justify-center p-6">
                                             <Image
                                                 src={imgUrl}
                                                 alt="crousal"
                                                 fill
                                                 className='object-cover bg-blend-lighten- opacity-75- '
                                             />
-                                            <div className='bg-gray-200- absolute inset-0' style={{ background: "rgba(0,0,0,0.5)" }}></div>
+                                            {/* <div className='bg-gray-200- absolute inset-0' style={{ background: "rgba(0,0,0,0.5)" }}></div> */}
                                         </CardContent>
                                     </Card>
                                 </div>

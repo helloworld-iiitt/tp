@@ -1,4 +1,4 @@
-
+"use client"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import BarGraphContainer from "./BarGraph";
 import PieChartContainer from "./PieChart";
@@ -6,7 +6,7 @@ import PieChartContainer from "./PieChart";
 export default function Statistics() {
 
     return (
-        <div className="mb-10">
+        <div className="">
             <Card className="">
                 <CardHeader>
                     <CardTitle>Statistics</CardTitle>
