@@ -34,7 +34,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
 
     return (
         <>
-            <div className='flex justify-between items-center px-2'>
+            <div className='flex justify-between md:justify-center items-center px-2'>
                 <Link href="/" className='flex justify-center items-center md:px-4'>
 
                     <div className='flex items-center flex-col pt-2'>
