@@ -10,17 +10,17 @@ export default function Statistics() {
             <Card className="">
                 <CardHeader>
                     <CardTitle>Statistics</CardTitle>
-                    <CardDescription>Batch 2024-25 (in LPA)</CardDescription>
+                    <CardDescription>Batch 2023-24 (in LPA)</CardDescription>
                 </CardHeader>
-                <CardContent className="flex">
-                    <div className="flex flex-col md:flex-row">
-                        <BarGraphContainer />
+                <CardContent className="grid md:grid-cols-3 justify-items-center">
+                    {/* <div className="grid justify-items-center"> */}
+                    <BarGraphContainer />
 
-                        <PieChartContainer />
-                    </div>
+                    <PieChartContainer />
+                    {/* </div> */}
                 </CardContent>
                 <CardFooter>
-                    <div className="w-full flex flex-col items-end">
+                    <div className="w-full flex flex-col items-center md:items-end">
 
                         <h1 className="font-semibold text-xl">Internships for 2024 Batch</h1>
                         <h2 className="text-base text-gray-600">Highest Stipend: 75000/month</h2>

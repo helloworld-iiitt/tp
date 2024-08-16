@@ -120,7 +120,7 @@ const Footer = () => {
 
             <div className='px-4 bg-[#daf7a6] py-4 text-[0.75rem] font-semibold'>
                 <h3 className='text-center text-offwhite'>@2024 - All Rights Reserved</h3>
-                <h3 className='text-center text-offwhite'>🌟 Brought to You with Dedication by the Training & Placement Cell, IIIT Trichy 🌟</h3>
+                <h3 className='text-center text-offwhite'>🌟 Brought to You with Dedication by the TNP Cell, IIIT Trichy 🌟</h3>
             </div>
 
         </div>

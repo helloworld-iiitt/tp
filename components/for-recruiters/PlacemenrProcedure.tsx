@@ -4,27 +4,24 @@ import { produreSteps } from './data'
 export default function PlacemenrProcedure() {
     return (
         <div>
-            <h1 className='md:text-4xl text-3xl text-green-500 font-semibold text-center pb-10'>PLACEMENT PROCEDURE</h1>
-            {/* <div className=''> */}
-            <div className='grid md:grid-cols-2 lg:grid-cols-4'>
-                {
-                    produreSteps.map((step, idx) =>
-                        <section key={idx}
-                            className="border-r-[1rem] border-[1rem] rounded-md max-w-[400px]">
-                            <div className='px-2 pt-2 flex'>
-                                <h1 className='text-[0.5rem]'>Step</h1>
-                                <div className='flex items-center gap-3 text-gray-500'>
-                                    <b className='text-3xl text-black'>{step.step}</b>
-                                    {step.icon}
-                                </div>
+            <h1 className='md:text-3xl text-xl text-green-500 font-semibold text-center pb-4'>PLACEMENT PROCEDURE</h1>
+
+            <div className="hex-main">
+                <div className="hex-container grid gap-1 md:block">
+                    {
+                        produreSteps.map((step, idx) =>
+                            <div key={idx} className="shadow-lg relative hover:scale-105 duration-200 cursor-pointer">
+                                <section className='flex justify-center font-bold text-3xl text-black'>
+                                    <p className='bg-white flex justify-center items-center shadow rounded-full w-14 h-14 translate-y-0'>{step.step}</p>
+                                </section>
+                                <h2 className='text-center text-xl capitalize font-bold'>{step.title}</h2>
+                                <section className='text-base overflow-hidden text-center md:text-justify absolute w-full px-4 pb-2'>
+                                    {step.description}
+                                </section>
                             </div>
-                            <div className='text-sm text-justify px-2 pb-2'>
-                                {step.description}
-                            </div>
-                        </section>
-                    )
-                }
-                {/* </div> */}
+                        )
+                    }
+                </div>
             </div>
         </div>
     )

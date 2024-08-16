@@ -17,9 +17,13 @@ export default function ClubCard() {
         Autoplay({ delay: 2000, stopOnInteraction: false })
     )
     return (
-        <div>
+        <div className='relative'>
             <Carousel
                 className="w-full my-10"
+                opts={{
+                    align: "start",
+                    loop: true,
+                }}
                 plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
@@ -33,7 +37,7 @@ export default function ClubCard() {
                                         <CardContent className="flex aspect-square- items-start justify-center py-4 md:px-8 md:py-6 min-h-[440px]">
                                             <div className="w-[300px]- flex flex-col items-center justify-center space-y-4">
                                                 {card.icon}
-                                                <h1 className='text-xl'>{card.title}</h1>
+                                                <h1 className='text-xl text-center'>{card.title}</h1>
 
                                                 <p className='text-gray-500 text-justify'>
                                                     {card.description}
@@ -45,8 +49,8 @@ export default function ClubCard() {
                             </CarouselItem>
                         ))}
                 </CarouselContent>
-                <CarouselPrevious className='ms-3' />
-                <CarouselNext className='me-3' />
+                <CarouselPrevious className='absolute -bottom-48 left-0' />
+                {/* <CarouselNext className='me-3 absolute bottom-0' /> */}
             </Carousel>
         </div>
     )

@@ -15,7 +15,7 @@ export const navigation: NavigationItem[] = [
     { name: 'Home', href: '/', current: true },
     { name: 'About Us', href: '/#about-us', current: false },
     { name: 'Why Recruit@IIITT', href: '/#why-recruit@IIITT', current: false },
-    { name: 'For Recruites', href: '/for-recruites', current: false },
+    { name: 'For Recruiters', href: '/for-recruiters', current: false },
     { name: 'Teams', href: '/#teams', current: false },
     { name: 'Contact Us', href: '/#contact-us', current: false },
 ]

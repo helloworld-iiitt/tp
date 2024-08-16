@@ -36,7 +36,7 @@ export default function page() {
                 </div>
             </div>
 
-            <div className="container py-16">
+            <div className="container py-16 pb-32">
                 <PlacemenrProcedure />
             </div>
 

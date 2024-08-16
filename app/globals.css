@@ -73,7 +73,7 @@
 .flip-card {
   background-color: transparent;
   /* width: 190px; */
-  height: 70vh;
+  /* height: 70vh; */
   perspective: 1000px;
   /* font-family: sans-serif; */
 }
@@ -133,4 +133,53 @@
       rgba(218, 247, 166, 0.7) 40%, rgba(218, 247, 166, 0.6) 48%);
   color: white;
   transform: rotateY(180deg);
+}
+
+.hex-main {
+  display: flex;
+  justify-content: center;
+  --s: 280px;
+  /* size  */
+  --m: 4px;
+  /* margin */
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+}
+
+@media screen and (max-width: 600px) {
+  .hex-main {
+    --m: auto;
+  }
+}
+
+
+
+.hex-container {
+  font-size: 0;
+  /*disable white space between inline block element */
+  /* display: flex; */
+  /* margin: auto; */
+}
+
+.hex-container div {
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s)*1.1547);
+  display: inline-block;
+  font-size: initial;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  background: #daf7a6;
+  margin-bottom: calc(var(--m) - var(--s)*0.2885);
+}
+
+.hex-container div:nth-child(odd) {
+  background: #C6E68E;
+}
+
+.hex-container::before {
+  content: "";
+  width: calc(var(--s)/2 + var(--m));
+  float: left;
+  height: 120%;
+  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
+      #000 0 var(--f));
 }

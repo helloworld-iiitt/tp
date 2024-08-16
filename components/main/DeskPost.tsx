@@ -6,7 +6,7 @@ export default function DeskPost() {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
 
-            <div className="flip-card">
+            <div className="flip-card h-[80vh] md:h-[70vh]">
                 <div className="flip-card-inner">
                     <div className="flip-card-front px-4 md:px-6 py-4">
                         <h1 className='text-green-500 font-bold text-2xl text-center mb-2'>FROM THE DIRECTOR&apos;S DESK</h1>
@@ -28,13 +28,13 @@ export default function DeskPost() {
                             </div>
                         </section>
                         <section className=''>
-                            <p className='text-base text-justify text-gray-600'>
+                            <p className='text-base text-justify text-gray-600 overflow-y-auto'>
                                 Indian Institute of Information Technology Tiruchirappalli (IIITT) is an
                                 initiative under the Public Private Partnership (PPP) model with a
                                 primary focus on addressing the challenges faced by the Indian IT
                                 industry and the growth of the domestic IT sector. IIITT attracts students
                                 from all over the country and abroad. The purpose of an institution of
-                                higher learning is ...
+                                higher learning is... [hover for more]
                             </p>
                             <div className='flex justify-end'>
                                 <MousePointerClick />
@@ -42,7 +42,7 @@ export default function DeskPost() {
                         </section>
                     </div>
                     <div className="flip-card-back">
-                        <section className='px-4 md:px-6 py-4 overflow-hidden'>
+                        <section className='px-4 md:px-6 py-4 overflow-auto'>
                             <p className='text-base text-justify text-gray-600'>
                                 to impart/inculcate the best  of the academic
                                 experience in a chosen discipline with specialized knowledge. The purpose of an institution of
@@ -73,7 +73,7 @@ export default function DeskPost() {
                 </div>
             </div>
 
-            <div className="flip-card">
+            <div className="flip-card h-[80vh] md:h-[70vh]">
                 <div className="flip-card-inner">
                     <div className="flip-card-front px-6 py-4">
                         <h1 className='text-green-500 font-bold text-2xl text-center mb-2'>FROM THE TPO</h1>
@@ -100,7 +100,7 @@ export default function DeskPost() {
                                 through encouraging students to participate in trainings and workshops
                                 to develop their professional and soft skills. The rigorous training as
                                 part of the curriculum enables each one of the students to gain first-hand IT sector. The T&P primarily engages itself in accomplishing a
-                                suitable place in the corporate sector...
+                                suitable place in the corporate sector... [hover for more]
                             </p>
                             <div className='flex justify-end'>
                                 <MousePointerClick />
