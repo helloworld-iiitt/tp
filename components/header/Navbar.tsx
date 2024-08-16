@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import { Globe } from 'lucide-react';
+import { Globe, Home, MessageCircle, Search, UserRound, Users, UserSearch } from 'lucide-react';
 import { quickLink1s } from '../footer/Footer';
 import Mobile from './Mobile';
 
@@ -9,15 +9,16 @@ interface NavigationItem {
     name: string;
     href: string;
     current: boolean;
+    icon: React.ReactNode;
 }
 
 export const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'About Us', href: '/#about-us', current: false },
-    { name: 'Why Recruit@IIITT', href: '/#why-recruit@IIITT', current: false },
-    { name: 'For Recruiters', href: '/for-recruiters', current: false },
-    { name: 'Teams', href: '/#teams', current: false },
-    { name: 'Contact Us', href: '/#contact-us', current: false },
+    { name: 'Home', href: '/', current: true, icon: <Home /> },
+    { name: 'About Us', href: '/#about-us', current: false, icon: <UserRound /> },
+    { name: 'Why Recruit@IIITT', href: '/#why-recruit@IIITT', current: false, icon: <Search /> },
+    { name: 'For Recruiters', href: '/for-recruiters', current: false, icon: <UserSearch /> },
+    { name: 'Teams', href: '/#teams', current: false, icon: <Users /> },
+    { name: 'Contact Us', href: '/#contact-us', current: false, icon: <MessageCircle /> },
 ]
 
 function classNames(...classes: string[]) {
@@ -88,7 +89,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
                                     href={item.href}
                                     className={classNames(
                                         item.current ? ' text-purple' : 'hover:text-purple',
-                                        'px-3 text-15px font-medium space-links'
+                                        'lg:px-3 text-sm lg:text-base font-medium'
                                     )}
                                     aria-current={item.href ? 'page' : undefined}
                                 >

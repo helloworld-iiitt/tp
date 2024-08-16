@@ -30,12 +30,12 @@ export default function Mobile() {
                                 href={item.href}
                                 className={classNames(
                                     item.current ? ' text-green-600' : 'hover:text-green-400',
-                                    'px-3 text-15px font-medium space-links text-xl'
+                                    'px-3 text-15px font-medium space-links text-xl flex justify-start items-center gap-1'
                                 )}
                                 aria-current={item.href ? 'page' : undefined}
                                 onClick={() => setOpen(false)}
                             >
-                                {item.name}
+                                {item.icon} {item.name}
                             </Link>
                         ))
                     }
