@@ -20,10 +20,10 @@ export default function Statistics() {
                     {/* </div> */}
                 </CardContent>
                 <CardFooter>
-                    <div className="w-full flex flex-col items-center md:items-end">
+                    <div className="w-full flex flex-col items-center text-center md:items-end">
 
-                        <h1 className="font-semibold text-xl">Internships for 2024 Batch</h1>
-                        <h2 className="text-base text-gray-600">Highest Stipend: 75000/month</h2>
+                        <h1 className="font-semibold text-base md:text-xl">Internships for 2024 Batch</h1>
+                        <h2 className="text-sm sm:text-base text-gray-600">Highest Stipend: 75000/month</h2>
                     </div>
 
                 </CardFooter>

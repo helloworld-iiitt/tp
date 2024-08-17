@@ -33,7 +33,7 @@ const chartConfig = {
 
 export default function BarGraphContainer() {
     return (
-        <ChartContainer config={chartConfig} className="w-full md:col-span-2">
+        <ChartContainer config={chartConfig} className="w-full h-[150px] sm:h-auto overflow-x-auto md:col-span-2">
             <BarChart accessibilityLayer data={chartData} className="">
                 {/* <YAxis
             dataKey="month"

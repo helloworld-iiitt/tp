@@ -1,4 +1,6 @@
 export const mainCrousalImg = [
+	"/main-slider/3.png",
+	"/main-slider/2.png",
 	"/main-slider/1.png",
 	"/main-slider/activity.png",
 	"/main-slider/ahlad.png",

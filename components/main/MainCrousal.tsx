@@ -22,9 +22,13 @@ export default function MainCrousal() {
     return (
         <div className=''>
             <Carousel
-                plugins={[plugin.current]}
                 className="w-full relative"
                 style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
+                opts={{
+                    align: "start",
+                    loop: true,
+                }}
+                plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >
@@ -34,7 +38,7 @@ export default function MainCrousal() {
                             <CarouselItem key={index}>
                                 <div className="p-1-">
                                     <Card className='border-0 '>
-                                        <CardContent className="flex relative h-[90vh]  items-center justify-center p-6">
+                                        <CardContent className="flex relative h-[83vh]  items-center justify-center p-6">
                                             <Image
                                                 src={imgUrl}
                                                 alt="crousal"
@@ -49,10 +53,10 @@ export default function MainCrousal() {
                         ))
                     }
                 </CarouselContent>
-                <div className='hidden md:block z-10 absolute top-[50%] left-20'>
+                <div className='hidden md:block absolute top-[50%] left-20'>
                     <CarouselPrevious />
                 </div>
-                <div className='hidden md:block z-10 absolute top-[50%] right-20'>
+                <div className='hidden md:block absolute top-[50%] right-20'>
                     <CarouselNext />
                 </div>
                 <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>

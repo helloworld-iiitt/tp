@@ -49,8 +49,8 @@ export default function ClubCard() {
                             </CarouselItem>
                         ))}
                 </CarouselContent>
-                <CarouselPrevious className='absolute -bottom-48 left-0' />
-                {/* <CarouselNext className='me-3 absolute bottom-0' /> */}
+                <CarouselPrevious className='ms-3' />
+                <CarouselNext className='me-3' />
             </Carousel>
         </div>
     )

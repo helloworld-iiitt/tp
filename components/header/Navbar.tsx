@@ -35,7 +35,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
 
     return (
         <>
-            <div className='flex justify-between md:justify-center items-center px-2'>
+            {/* <div className='flex justify-between md:justify-center- items-center px-2'>
                 <Link href="/" className='flex justify-center items-center md:px-4'>
 
                     <div className='flex items-center flex-col pt-2'>
@@ -59,13 +59,13 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
                 <div className="md:hidden block">
                     <Mobile />
                 </div>
-            </div>
-            <hr className='w-full border mt-1 hidden md:block' />
+            </div> */}
+            {/* <hr className='w-full border mt-1 hidden md:block' /> */}
 
-            <nav className={`mx-auto px-6 duration-300 items-center lg:px-8 flex ${showImg ? "justify-between backdrop-blur-md shadow py-4" : "justify-center py-2"} sticky z-10 top-0`}>
+            <nav className={`mx-auto py-4 px-6 duration-300 items-center lg:px-8 flex ${showImg ? "justify-between backdrop-blur-md shadow py-4" : "justify-between backdrop-blur-md shadow py-4"} sticky z-10 top-0`}>
                 {/* LOGO */}
                 <Link href='/'>
-                    <div className={` ${showImg ? "flex" : "hidden"} gap-2 items-center`}>
+                    <div className={` ${showImg ? "flex" : "flex"} gap-2 items-center`}>
                         <Image
                             src='/logo.png'
                             alt='logo'

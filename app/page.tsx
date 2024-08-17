@@ -49,7 +49,9 @@ export default function Home() {
       </div>
 
       <div id="teams" className="py-16 pt-20">
-        <OfficerContainer />
+        <div className="container">
+          <OfficerContainer />
+        </div>
       </div>
 
       <div className="bg-[#f8ffeb] py-16">

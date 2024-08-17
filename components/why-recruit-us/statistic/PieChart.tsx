@@ -39,7 +39,7 @@ export default function PieChartContainer() {
     return (
         <ChartContainer
             config={chartConfig}
-            className="md:aspect-square w-full"
+            className="aspect-square w-full"
         >
             <PieChart>
                 <ChartTooltip

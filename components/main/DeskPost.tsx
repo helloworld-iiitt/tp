@@ -6,12 +6,12 @@ export default function DeskPost() {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
 
-            <div className="flip-card h-[80vh] md:h-[70vh]">
+            <div className="flip-card h-[180vh] sm:h-[80vh] md:h-[70vh]">
                 <div className="flip-card-inner">
                     <div className="flip-card-front px-4 md:px-6 py-4">
-                        <h1 className='text-green-500 font-bold text-2xl text-center mb-2'>FROM THE DIRECTOR&apos;S DESK</h1>
+                        <h1 className='text-green-500 font-bold text-base sm:text-2xl text-center mb-2'>FROM THE DIRECTOR&apos;S DESK</h1>
                         <section className='relative flex items-center flex-col'>
-                            <div className='rounded-md w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] relative'>
+                            <div className='rounded-md w-[150px] h-[100px] sm:h-[150px] lg:w-[200px] lg:h-[200px] relative'>
                                 <Image
                                     src='/teams/director.png'
                                     alt='director'
@@ -21,14 +21,14 @@ export default function DeskPost() {
                             </div>
 
                             <div className='my-2'>
-                                <h1 className='text-green-500 font-bold text-lg text-center'>DR. NARASIMHA SARMA NVS</h1>
+                                <h1 className='text-green-500 font-bold text-sm sm:text-lg text-center'>DR. NARASIMHA SARMA NVS</h1>
                                 <p className='text-sm text-gray-600'>
                                     Director, IIIT, Tiruchirappalli
                                 </p>
                             </div>
                         </section>
                         <section className=''>
-                            <p className='text-base text-justify text-gray-600 overflow-y-auto'>
+                            <p className='text-base text-justify text-gray-600'>
                                 Indian Institute of Information Technology Tiruchirappalli (IIITT) is an
                                 initiative under the Public Private Partnership (PPP) model with a
                                 primary focus on addressing the challenges faced by the Indian IT
@@ -73,12 +73,12 @@ export default function DeskPost() {
                 </div>
             </div>
 
-            <div className="flip-card h-[80vh] md:h-[70vh]">
+            <div className="flip-card h-[180vh] sm:h-[80vh] md:h-[70vh]">
                 <div className="flip-card-inner">
                     <div className="flip-card-front px-6 py-4">
-                        <h1 className='text-green-500 font-bold text-2xl text-center mb-2'>FROM THE TPO</h1>
+                        <h1 className='text-green-500 font-bold text-base sm:text-2xl text-center'>FROM THE TPO</h1>
                         <section className='relative flex items-center flex-col'>
-                            <div className='rounded-md  w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] relative'>
+                            <div className='rounded-md  w-[150px] h-[100px] sm:h-[150px] lg:w-[200px] lg:h-[200px] relative'>
                                 <Image
                                     src='/teams/devasena1.jpg'
                                     alt='director'
@@ -88,7 +88,7 @@ export default function DeskPost() {
                             </div>
 
                             <div className='my-2'>
-                                <h1 className='text-green-500 font-bold text-lg text-center'>DR. G. DEVASENA</h1>
+                                <h1 className='text-green-500 font-bold text-sm sm:text-lg text-center'>DR. G. DEVASENA</h1>
                                 <p className='text-sm text-gray-600'>
                                     Placement Coordinator, Tiruchirappalli
                                 </p>
