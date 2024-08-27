@@ -8,7 +8,7 @@ export default function Statistics() {
     return (
         <div className="">
             <Card className="">
-                <CardHeader>
+                <CardHeader className='text-2xl md:text-3xl font-semibold'>
                     <CardTitle>Statistics</CardTitle>
                     <CardDescription>Batch 2023-24 (in LPA)</CardDescription>
                 </CardHeader>

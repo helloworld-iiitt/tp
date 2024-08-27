@@ -1,11 +1,11 @@
-import { heads, representatives } from '@/lib/constants/home'
+import { representatives } from '@/lib/constants/home'
 import MemberCard from '@/components/teams/MemberCard'
 import React from 'react'
 
 export default function StudentContainer() {
     return (
         <>
-            <h1 className='text-3xl text-center font-semibold text-green-500 mb-8'>STUDENT COORDINATORS</h1>
+            <h1 className='text-2xl md:text-3xl text-center font-semibold mb-8'>STUDENT COORDINATORS</h1>
             <section className='flex flex-wrap justify-center gap-4'>
                 {
                     representatives.map((head, idx) =>

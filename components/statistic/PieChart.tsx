@@ -30,7 +30,7 @@ export default function PieChartContainer() {
     return (
         <ChartContainer
             config={chartConfig}
-            className="aspect-square w-full"
+            className="md:aspect-square w-full"
         >
             <PieChart>
                 <ChartTooltip
@@ -58,7 +58,7 @@ export default function PieChartContainer() {
                                         <tspan
                                             x={viewBox.cx}
                                             y={viewBox.cy}
-                                            className="fill-foreground text-3xl font-bold"
+                                            className="fill-foreground text-xl md:text-3xl font-bold"
                                         >
                                             {perPlaced.toLocaleString() + " %"}
                                         </tspan>

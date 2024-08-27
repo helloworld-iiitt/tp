@@ -1,8 +1,8 @@
-import React from 'react'
-import { topPlacedStudents } from './data'
+import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
 import { Card, CardContent } from '../ui/card'
 import Image from 'next/image'
+import { topPlacedStudents } from '@/lib/constants/home';
 
 export default function PlacedStudentCard() {
     return (

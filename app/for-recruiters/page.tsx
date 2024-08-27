@@ -1,17 +1,15 @@
 import HowToReach from '@/components/for-recruiters/HowToReach'
-import PlacemenrProcedure from '@/components/for-recruiters/PlacemenrProcedure'
-import { Button } from '@/components/ui/button'
-import { companies, companies1, companies2 } from '@/components/why-recruit-us/data'
-import Statistics from '@/components/statistic/Statistics'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import PlacemenrProcedure from '@/components/for-recruiters/PlacemenrProcedure';
+import { companies, companies1, companies2 } from '@/lib/constants/home'
+import Statistics from '@/components/statistic/Statistics';
+import Image from 'next/image';
+import React from 'react';
 
 export default function page() {
     return (
         <div>
-            <div className='container py-16'>
-                <h1 className='text-2xl md:text-4xl text-green-600 text-center font-bold'>Past Recruiters</h1>
+            <div className='container py-20 md:pt-24'>
+                <h1 className='text-2xl md:text-3xl text-center font-bold mb-4'>Past Recruiters</h1>
                 <section className='relative w-full'>
                     <div className='flex flex-wrap mx-auto gap-6 justify-center'>
 

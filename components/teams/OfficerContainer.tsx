@@ -1,11 +1,11 @@
-import { heads, representatives } from '@/components/teams/data'
+import { heads } from '@/lib/constants/home';
 import MemberCard from '@/components/teams/MemberCard'
 import React from 'react'
 
 export default function OfficerContainer() {
     return (
         <>
-            <h1 className='text-3xl text-center font-semibold text-green-500 mb-8'>HEAD & OFFICER</h1>
+            <h1 className='text-2xl md:text-3xl text-center font-semibold mb-8' >HEAD & OFFICER</h1>
             <section className='flex justify-center flex-wrap gap-4'>
                 {
                     heads.map((head, idx) =>

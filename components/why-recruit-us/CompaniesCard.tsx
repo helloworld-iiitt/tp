@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import Marquee from 'react-fast-marquee';
-import { companies, companies1, companies2 } from './data';
+import { companies, companies1, companies2 } from '@/lib/constants/home';
 import Image from 'next/image';
 
 export default function CompaniesCard() {

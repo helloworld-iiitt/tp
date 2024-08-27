@@ -21,7 +21,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
         <nav className={`w-full py-4 absolute px-6 duration-300 items-center bg-white bg-opacity-50 lg:px-8 flex justify-between shadow z-10 top-0`}>
             {/* LOGO */}
             <Link href='/'>
-                <div className={` ${showImg ? "flex" : "flex"} gap-2 items-center`}>
+                <div className={`flex gap-2 items-center`}>
                     <Image
                         src='/logo.png'
                         alt='logo'
@@ -56,7 +56,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
                 </div>
             </div>
 
-            <div className={` ${showImg ? "flex" : "hidden"} md:hidden block`}>
+            <div className={`md:hidden block`}>
                 <Mobile />
             </div>
 
