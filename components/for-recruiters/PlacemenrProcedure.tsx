@@ -1,5 +1,5 @@
-import React from 'react'
-import { produreSteps } from './data'
+import { produreSteps } from '@/lib/constants/forRecruites';
+import React from 'react';
 
 export default function PlacemenrProcedure() {
     return (

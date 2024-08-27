@@ -9,12 +9,7 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart";
-
-
-const chartData = [
-    { title: "placed", count: 90, fill: "#17726d" },
-    { title: "notPlaced", count: 10, fill: "#eae4d2" },
-]
+import { pieChartData } from "@/lib/constants/home";
 
 const chartConfig = {
     placed: {
@@ -27,15 +22,11 @@ const chartConfig = {
     },
 } satisfies ChartConfig;
 
-const perPlaced = (chartData[0].count / chartData.reduce((acc, curr) => acc + curr.count, 0)) * 100 || 100;
+const perPlaced = (pieChartData[0].count / pieChartData.reduce((acc, curr) => acc + curr.count, 0)) * 100 || 100;
 
 
 
 export default function PieChartContainer() {
-
-
-
-
     return (
         <ChartContainer
             config={chartConfig}
@@ -48,7 +39,7 @@ export default function PieChartContainer() {
                 />
                 <Pie
                     className="md:hidden"
-                    data={chartData}
+                    data={pieChartData}
                     dataKey="count"
                     nameKey="placed"
                     innerRadius={50}
@@ -86,7 +77,7 @@ export default function PieChartContainer() {
                 </Pie>
                 <Pie
                     className="hidden md:block"
-                    data={chartData}
+                    data={pieChartData}
                     dataKey="count"
                     nameKey="placed"
                     innerRadius={120}

@@ -1,13 +1,13 @@
 "use client";
-import React from 'react'
+import React from 'react';
 import {
     Sheet,
     SheetContent,
     SheetTrigger,
-} from "@/components/ui/sheet"
-import { Menu } from 'lucide-react'
-import { navigation } from './Navbar'
+} from "@/components/ui/sheet";
+import { Menu } from 'lucide-react';
 import Link from 'next/link'
+import { navigation } from '@/lib/constants/home';
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }

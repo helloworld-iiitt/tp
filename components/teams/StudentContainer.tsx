@@ -1,4 +1,4 @@
-import { heads, representatives } from '@/components/teams/data'
+import { heads, representatives } from '@/lib/constants/home'
 import MemberCard from '@/components/teams/MemberCard'
 import React from 'react'
 

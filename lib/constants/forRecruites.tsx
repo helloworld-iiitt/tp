@@ -1,4 +1,4 @@
-import { Airplay, Bus, Car, Footprints, Plane, Train } from "lucide-react";
+import { Bus, Car, Footprints, Plane, Train } from "lucide-react";
 
 export const produreSteps = [
     {

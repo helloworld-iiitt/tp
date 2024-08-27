@@ -1,6 +1,5 @@
-import React from 'react'
-import UpdateSection from './UpdateSection'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 export default function AboutIIITT() {
     return (

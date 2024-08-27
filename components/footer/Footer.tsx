@@ -1,48 +1,5 @@
 import Link from "next/link";
-import { navigation } from "../header/Navbar";
-import { ArrowDownToLine, FileText, Globe, Linkedin, Mail, Phone, Twitter } from "lucide-react";
-import Image from "next/image";
-
-export const quickLink1s = [
-    {
-        icon: <Mail className='h-4' />,
-        href: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=placement@iiitt.ac.in",
-        title: "placement@iiitt.ac.in"
-    },
-    {
-        icon: <Phone className='h-4' />,
-        href: "https://api.whatsapp.com/send?phone=9042473621",
-        title: "+91 9042473621"
-    },
-    {
-        icon: <Linkedin className='h-4' />,
-        href: "https://www.linkedin.com/in/tnp-cell-iiit-tiruchirappalli",
-        title: "@tnp-cell-iiit-tiruchirappalli"
-    },
-    {
-        icon: <Twitter className='h-4' />,
-        href: "https://twitter.com/IIITTrichy",
-        title: "Twitter"
-    },
-];
-
-const quickLink2s = [
-    {
-        icon: <FileText className='h-4' />,
-        href: "CONTACT US",
-        title: "BROCHURE"
-    },
-    {
-        icon: <ArrowDownToLine className='h-4' />,
-        href: "",
-        title: "PLACEMENT DETAILS"
-    },
-    {
-        icon: <Globe className='h-4' />,
-        href: "http://iiitt.ac.in/",
-        title: "iiitt.ac.in"
-    },
-]
+import { navigation, quickLink1s, quickLink2s } from "@/lib/constants/home";
 
 const Footer = () => {
     return (

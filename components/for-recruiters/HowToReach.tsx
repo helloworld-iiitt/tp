@@ -1,5 +1,5 @@
+import { locations } from '@/lib/constants/forRecruites'
 import React from 'react'
-import { locations } from './data'
 
 export default function HowToReach() {
     return (

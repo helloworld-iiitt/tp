@@ -9,12 +9,8 @@ import {
     ChartLegendContent,
     ChartTooltip,
     ChartTooltipContent,
-} from "@/components/ui/chart"
-const chartData = [
-    { title: "CSE", highCTC: 46, avgCTC: 12, medianCTC: 7 },
-    { title: "ECE", highCTC: 10, avgCTC: 7, medianCTC: 8 },
-    { title: "Overall", highCTC: 46, avgCTC: 10, medianCTC: 7 }
-]
+} from "@/components/ui/chart";
+import { barChartData } from "@/lib/constants/home";
 
 const chartConfig = {
     highCTC: {
@@ -34,7 +30,7 @@ const chartConfig = {
 export default function BarGraphContainer() {
     return (
         <ChartContainer config={chartConfig} className="w-full h-[150px] sm:h-auto overflow-x-auto md:col-span-2">
-            <BarChart accessibilityLayer data={chartData} className="">
+            <BarChart accessibilityLayer data={barChartData} className="">
                 {/* <YAxis
             dataKey="month"
             tickLine={false}

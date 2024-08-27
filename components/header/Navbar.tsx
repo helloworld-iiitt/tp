@@ -1,25 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import { Globe, Home, MessageCircle, Search, UserRound, Users, UserSearch } from 'lucide-react';
-import { quickLink1s } from '../footer/Footer';
 import Mobile from './Mobile';
+import { navigation } from '@/lib/constants/home';
 
-interface NavigationItem {
-    name: string;
-    href: string;
-    current: boolean;
-    icon: React.ReactNode;
-}
-
-export const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/', current: true, icon: <Home /> },
-    { name: 'About Us', href: '/#about-us', current: false, icon: <UserRound /> },
-    { name: 'Why Recruit@IIITT', href: '/#why-recruit@IIITT', current: false, icon: <Search /> },
-    { name: 'For Recruiters', href: '/for-recruiters', current: false, icon: <UserSearch /> },
-    { name: 'Teams', href: '/#teams', current: false, icon: <Users /> },
-    { name: 'Contact Us', href: '/#contact-us', current: false, icon: <MessageCircle /> },
-]
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -34,78 +18,49 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
     }, []);
 
     return (
-        <>
-            {/* <div className='flex justify-between md:justify-center- items-center px-2'>
-                <Link href="/" className='flex justify-center items-center md:px-4'>
-
-                    <div className='flex items-center flex-col pt-2'>
-                        <div className='flex gap-1'>
-                            <section className='relative w-[50px] h-[50px] md:w-[60px] md:h-[60px]'>
-                                <Image
-                                    src='/logo.png'
-                                    alt='logo'
-                                    fill
-                                />
-                            </section>
-                            <section>
-                                <h1 className='text-base sm:text-xl md:text-[1.8rem] font-semibold text-green-700 text-center'>Training & Placement Cell</h1>
-                                <h1 className='text-[0.4rem] sm:text-[0.5rem] md:text-[0.75rem] font-semibold text-green-700 text-center'>Indian Institute of Information Technology, Tiruchirappalli (IIITT)</h1>
-                                <h3 className='text-green-500 text-[0.5rem] md:text-[0.65rem] text-center'>An Institute of National Importance, established by MHRD</h3>
-                            </section>
-                        </div>
-                    </div>
-                </Link >
-
-                <div className="md:hidden block">
-                    <Mobile />
-                </div>
-            </div> */}
-            {/* <hr className='w-full border mt-1 hidden md:block' /> */}
-
-            <nav className={`w-full py-4 absolute px-6 duration-300 items-center bg-white bg-opacity-50 lg:px-8 flex justify-between shadow z-10 top-0`}>
-                {/* LOGO */}
-                <Link href='/'>
-                    <div className={` ${showImg ? "flex" : "flex"} gap-2 items-center`}>
-                        <Image
-                            src='/logo.png'
-                            alt='logo'
-                            width={40}
-                            height={40}
-                            className='fade-in-5 ease-in-out delay-200'
-                        />
-                        <div>
-                            <h1 className='text-base font-semibold -mb-1 text-[#44563e]'>IIITT</h1>
-                            <h3 className='text-[#44563e] text-sm'>Training & Placement Cell</h3>
-                        </div>
-                    </div>
-                </Link>
-                {/* LINKS */}
-                <div className="hidden relative md:flex items-center justify-center">
-                    <div className="sm:ml-14">
-                        <div className="flex space-x-4 hover:text-green-800">
-                            {navigation.map((item) => (
-                                <Link
-                                    key={item.name}
-                                    href={item.href}
-                                    className={classNames(
-                                        item.current ? ' text-purple' : 'hover:text-purple',
-                                        'lg:px-3 text-sm lg:text-base font-medium'
-                                    )}
-                                    aria-current={item.href ? 'page' : undefined}
-                                >
-                                    {item.name}
-                                </Link>
-                            ))}
-                        </div>
+        <nav className={`w-full py-4 absolute px-6 duration-300 items-center bg-white bg-opacity-50 lg:px-8 flex justify-between shadow z-10 top-0`}>
+            {/* LOGO */}
+            <Link href='/'>
+                <div className={` ${showImg ? "flex" : "flex"} gap-2 items-center`}>
+                    <Image
+                        src='/logo.png'
+                        alt='logo'
+                        width={40}
+                        height={40}
+                        className='fade-in-5 ease-in-out delay-200'
+                    />
+                    <div>
+                        <h1 className='text-base font-semibold -mb-1 text-[#44563e]'>IIITT</h1>
+                        <h3 className='text-[#44563e] text-sm'>Training & Placement Cell</h3>
                     </div>
                 </div>
-
-                <div className={` ${showImg ? "flex" : "hidden"} md:hidden block`}>
-                    <Mobile />
+            </Link>
+            {/* LINKS */}
+            <div className="hidden relative md:flex items-center justify-center">
+                <div className="sm:ml-14">
+                    <div className="flex space-x-4 hover:text-green-800">
+                        {navigation.map((item) => (
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                className={classNames(
+                                    item.current ? ' text-purple' : 'hover:text-purple',
+                                    'lg:px-3 text-sm lg:text-base font-medium'
+                                )}
+                                aria-current={item.href ? 'page' : undefined}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </div>
                 </div>
+            </div>
 
-            </nav>
-        </>
+            <div className={` ${showImg ? "flex" : "hidden"} md:hidden block`}>
+                <Mobile />
+            </div>
+
+        </nav>
     )
 }
 
