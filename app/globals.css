@@ -74,7 +74,7 @@
   background-color: transparent;
   /* width: 190px; */
   /* height: 70vh; */
-  perspective: 1000px;
+  /* perspective: 1000px; */
   /* font-family: sans-serif; */
 }
 
@@ -85,31 +85,31 @@
   margin: 0;
 }
 
-.flip-card-inner {
+/* .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}
+} */
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-}
+} */
 
 .flip-card-front,
 .flip-card-back {
   /* box-shadow: 0 1px rgba(0, 0, 0, 0.2); */
   @apply shadow;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  /* position: absolute; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* -webkit-backface-visibility: hidden; */
+  /* backface-visibility: hidden; */
   /* border: 1px solid #AFE1AF; */
   border-radius: 1rem;
 }
@@ -132,7 +132,7 @@
   background: linear-gradient(120deg, #DAF7A6 60%, rgba(218, 247, 166, 0.88) 88%,
       rgba(218, 247, 166, 0.7) 40%, rgba(218, 247, 166, 0.6) 48%);
   color: white;
-  transform: rotateY(180deg);
+  /* transform: rotateY(180deg); */
 }
 
 .hex-main {
@@ -183,4 +183,20 @@
   height: 120%;
   shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
       #000 0 var(--f));
+}
+
+.hero-parallax {
+  /* Full height */
+  height: 93vh;
+
+  /* Background images */
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.5) 30%, rgba(255, 255, 255, 0.4)),
+    url("/iiitt-main.jpg");
+
+  /* Background properties */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

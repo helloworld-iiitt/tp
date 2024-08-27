@@ -7,7 +7,7 @@ export default function AboutIIITT() {
         <div id='about-us' >
             <h2 className='h-20'></h2>
             <div>
-                <h1 className='text-green-500 font-bold text-2xl md:text-3xl text-center mb-2'>About IIIT Trichy</h1>
+                <h1 className='text-green-500 font-bold text-2xl md:text-3xl text-center mb-6'>About IIIT Trichy</h1>
 
                 <section className='grid md:grid-cols-2  items-center justify-items-center gap-4 shadow rounded md:p-10 p-4'>
 

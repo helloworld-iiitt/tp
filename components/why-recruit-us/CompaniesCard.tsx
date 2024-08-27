@@ -13,7 +13,7 @@ export default function CompaniesCard() {
 
                 <Marquee pauseOnHover
                     gradient
-                    gradientColor="#f8ffeb"
+                    // gradientColor="#f8ffeb"
                     className='flex justify-evenly gap-2 items-center'
                 >
                     {
@@ -32,7 +32,7 @@ export default function CompaniesCard() {
                 <Marquee pauseOnHover
                     direction='right'
                     gradient
-                    gradientColor="#f8ffeb"
+                    // gradientColor="#f8ffeb"
                     className='flex justify-evenly gap-2 items-center my-10'
                 >
                     {
@@ -50,7 +50,7 @@ export default function CompaniesCard() {
                 </Marquee>
                 <Marquee pauseOnHover
                     gradient
-                    gradientColor="#f8ffeb"
+                    // gradientColor="#f8ffeb"
                     className='flex justify-evenly gap-2 items-center'
                 >
                     {

@@ -1,5 +1,6 @@
 import AboutIIITT from "@/components/main/AboutIIITT";
 import DeskPost from "@/components/main/DeskPost";
+import HeroSection from "@/components/main/HeroSection";
 import MainCrousal from "@/components/main/MainCrousal";
 import OfficerContainer from "@/components/teams/OfficerContainer";
 import StudentContainer from "@/components/teams/StudentContainer";
@@ -12,9 +13,10 @@ import Statistics from "@/components/why-recruit-us/statistic/Statistics";
 export default function Home() {
   return (
     <>
-      <MainCrousal />
+      <HeroSection />
+      {/* <MainCrousal /> */}
 
-      <div className="container my-16">
+      <div className="container my-20">
         {/* About iiitt */}
         <AboutIIITT />
       </div>
@@ -31,34 +33,34 @@ export default function Home() {
         <WhyRecruitUs />
       </div>
 
-      <div className="bg-[#f8ffeb] py-16">
+      <div className="bg-[#f8ffeb] py-20">
         <div className="container">
           {/* From director&TPO desk */}
           <Statistics />
         </div>
       </div>
 
-      <div className="container py-16">
-        <PlacedStudentCard />
+      <div className="container py-20">
+        {/* <PlacedStudentCard /> */}
+        <CompaniesCard />
       </div>
 
-      <div className="bg-[#f8ffeb] py-16">
-        <div className="container">
-          <CompaniesCard />
-        </div>
-      </div>
-
-      <div id="teams" className="py-16 pt-20">
+      <div className="bg-[#f8ffeb] py-20">
         <div className="container">
           <OfficerContainer />
         </div>
       </div>
 
-      <div className="bg-[#f8ffeb] py-16">
+      <div id="teams" className="py-20 pt-20">
         <div className="container">
           <StudentContainer />
         </div>
       </div>
+
+      {/* <div className="bg-[#f8ffeb] py-20">
+        <div className="container">
+        </div>
+      </div> */}
     </>
   );
 }
