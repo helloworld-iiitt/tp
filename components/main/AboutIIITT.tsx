@@ -8,6 +8,7 @@ export default function AboutIIITT() {
         <motion.div
             initial={{ y: 100, opacity: 0 }}
             // animate={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: 'easeInOut', duration: 0.8 }}
         >

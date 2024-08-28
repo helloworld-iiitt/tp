@@ -19,6 +19,7 @@ export default function DeskPost() {
 
             <motion.div
                 initial={{ x: -50, opacity: 0 }}
+                viewport={{ once: true }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: 'easeInOut', duration: 0.8 }}
                 className="flip-card-front px-6 py-6">
@@ -115,6 +116,7 @@ export default function DeskPost() {
             <motion.div
                 initial={{ x: 50, opacity: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
                 transition={{ ease: 'easeInOut', duration: 0.8 }}
                 className="flip-card-front px-6 py-4">
                 <h1 className='text-green-500 font-bold text-2xl md:text-2xl text-center'>FROM THE TPO</h1>

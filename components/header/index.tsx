@@ -28,7 +28,7 @@ const Navbarin: React.FC = () => {
         // so we can use it in our stylesheets
         const storeScroll = () => {
             document.documentElement.dataset.scroll = window.scrollY.toString();
-            if (window.scrollY > 84) {
+            if (window.scrollY > 200) {
                 setShowImg(true);
             } else {
                 setShowImg(false);

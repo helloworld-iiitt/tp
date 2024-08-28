@@ -14,6 +14,7 @@ export default function PlacemenrProcedure() {
                         produreSteps.map((step, idx) =>
                             <motion.div
                                 initial={{ y: 50, opacity: 0 }}
+                                viewport={{ once: true }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ ease: 'easeInOut', duration: 0.8 + idx * 0.1 }}
                                 key={idx} className="shadow-lg relative hover:scale-105 duration-200 cursor-pointer">

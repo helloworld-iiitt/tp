@@ -38,15 +38,12 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
             {/* LINKS */}
             <div className="hidden relative md:flex items-center justify-center">
                 <div className="sm:ml-14">
-                    <div className="flex space-x-4 hover:text-green-800">
+                    <div className="flex space-x-4">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className={classNames(
-                                    item.current ? ' text-purple' : 'hover:text-purple',
-                                    'lg:px-3 text-sm lg:text-base font-medium'
-                                )}
+                                className='lg:px-3 text-sm lg:text-base font-medium hover:text-green-600'
                                 aria-current={item.href ? 'page' : undefined}
                             >
                                 {item.name}
