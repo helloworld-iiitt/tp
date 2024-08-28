@@ -6,6 +6,7 @@ import StudentContainer from "@/components/teams/StudentContainer";
 import WhyRecruitUs from "@/components/why-recruit-us/WhyUs";
 import CompaniesCard from "@/components/why-recruit-us/CompaniesCard";
 import Statistics from "@/components/statistic/Statistics";
+import Gallary from "@/components/gallary/Gallary";
 
 export default function Home() {
   return (
@@ -49,6 +50,12 @@ export default function Home() {
       <div className="py-20">
         <div className="container">
           <StudentContainer />
+        </div>
+      </div>
+
+      <div className="bg-[#f8ffeb] py-20 pt-20">
+        <div className="container">
+          <Gallary />
         </div>
       </div>
     </>

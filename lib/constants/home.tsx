@@ -326,3 +326,24 @@ export const quickLink2s = [
         title: "iiitt.ac.in"
     },
 ]
+
+// Gallary
+
+export const pics = [
+    '/gallary/pic(1).jpeg', '/gallary/pic(19).JPG', '/gallary/pic(29).JPG', '/gallary/pic(4).jpg', '/gallary/pic(5).jpg',
+    '/gallary/pic(1).jpg', '/gallary/pic(2).jpg', '/gallary/pic(3).jpg', '/gallary/pic(4).png', '/gallary/pic(50).jpg',
+    '/gallary/pic(1).png', '/gallary/pic(2).png', '/gallary/pic(30).JPG', '/gallary/pic(40).jpg', '/gallary/pic(51).jpg',
+    '/gallary/pic(10).jpg', '/gallary/pic(20).JPG', '/gallary/pic(31).JPG', '/gallary/pic(41).jpg', '/gallary/pic(52).jpg'
+];
+export const pic1s = [
+    '/gallary/pic(11).jpg', '/gallary/pic(21).JPG', '/gallary/pic(32).JPG', '/gallary/pic(42).jpg', '/gallary/pic(53).jpg',
+    '/gallary/pic(12).jpg', '/gallary/pic(22).JPG', '/gallary/pic(33).JPG', '/gallary/pic(43).jpg', '/gallary/pic(6).jpg',
+    '/gallary/pic(13).jpg', '/gallary/pic(23).JPG', '/gallary/pic(34).JPG', '/gallary/pic(44).jpg', '/gallary/pic(7).jpg',
+    '/gallary/pic(14).jpg', '/gallary/pic(24).JPG', '/gallary/pic(35).JPG', '/gallary/pic(45).jpg', '/gallary/pic(8).jpg'
+];
+export const pic2s = [
+    '/gallary/pic(15).jpg', '/gallary/pic(25).JPG', '/gallary/pic(36).JPG', '/gallary/pic(46).jpg', '/gallary/pic(9).jpg',
+    '/gallary/pic(16).jpg', '/gallary/pic(26).JPG', '/gallary/pic(37).JPG', '/gallary/pic(47).jpg',
+    '/gallary/pic(17).JPG', '/gallary/pic(27).JPG', '/gallary/pic(38).JPG', '/gallary/pic(48).jpg',
+    '/gallary/pic(18).JPG', '/gallary/pic(28).JPG', '/gallary/pic(39).jpg', '/gallary/pic(49).jpg'
+];
