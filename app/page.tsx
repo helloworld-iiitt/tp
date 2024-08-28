@@ -13,7 +13,7 @@ export default function Home() {
       {/* <Main /> */}
       <HeroSection />
 
-      <div className="container my-20">
+      <div id='about-us' className="container  py-20 pt-20">
         {/* About iiitt */}
         <AboutIIITT />
       </div>
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       {/* why recruit us */}
-      <div className="container pb-6">
+      <div id='why-recruit@IIITT' className="container py-20 pt-20">
         <WhyRecruitUs />
       </div>
 
@@ -40,13 +40,13 @@ export default function Home() {
         <CompaniesCard />
       </div>
 
-      <div className="bg-[#f8ffeb] py-20">
+      <div id="teams" className="bg-[#f8ffeb] py-20 pt-20">
         <div className="container">
           <OfficerContainer />
         </div>
       </div>
 
-      <div id="teams" className="py-20 pt-20">
+      <div className="py-20">
         <div className="container">
           <StudentContainer />
         </div>

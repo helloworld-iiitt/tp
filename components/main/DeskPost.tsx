@@ -1,3 +1,4 @@
+"use client";
 import { MousePointerClick } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react';
@@ -10,13 +11,17 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { Button } from '../ui/button';
+import { motion } from "framer-motion";
 
 export default function DeskPost() {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
 
-            <div className="flip-card-front px-6 py-6">
+            <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ ease: 'easeInOut', duration: 0.8 }}
+                className="flip-card-front px-6 py-6">
                 <h1 className='text-green-500 font-bold text-2xl md:text-2xl text-center'>FROM THE DIRECTOR&apos;S DESK</h1>
                 <section className='relative flex items-center flex-col py-2'>
                     <div className='rounded-md w-[150px] lg:w-[200px] h-[200px] relative'>
@@ -105,9 +110,13 @@ export default function DeskPost() {
                 </section>
 
 
-            </div>
+            </motion.div>
 
-            <div className="flip-card-front px-6 py-4">
+            <motion.div
+                initial={{ x: 50, opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ ease: 'easeInOut', duration: 0.8 }}
+                className="flip-card-front px-6 py-4">
                 <h1 className='text-green-500 font-bold text-2xl md:text-2xl text-center'>FROM THE TPO</h1>
                 <section className='relative flex items-center py-2 flex-col'>
                     <div className='rounded-md w-[150px]  lg:w-[200px] h-[200px] relative'>
@@ -183,7 +192,7 @@ export default function DeskPost() {
                 </section>
 
 
-            </div>
+            </motion.div>
         </div >
     )
 }

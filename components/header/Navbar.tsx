@@ -18,7 +18,7 @@ const Navbar = ({ showImg }: { showImg: boolean }) => {
     }, []);
 
     return (
-        <nav className={`w-full py-4 absolute px-6 duration-300 items-center bg-white bg-opacity-50 lg:px-8 flex justify-between shadow z-10 top-0`}>
+        <nav className={`w-full duration-300 py-4 ${showImg ? "sticky backdrop-blur-lg" : "absolute"} px-6 items-center bg-white bg-opacity-50 lg:px-8 flex justify-between shadow z-10 top-0`}>
             {/* LOGO */}
             <Link href='/'>
                 <div className={`flex gap-2 items-center`}>
