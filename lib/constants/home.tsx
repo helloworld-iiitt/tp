@@ -226,7 +226,7 @@ export const heads = [
         imageUrl: "/teams/devasena.jpg",
         email: "placement@iiitt.ac.in",
         phone: "9042473621",
-        linkedinId: "tnp-cell-iiit-tiruchirappalli",
+        linkedinId: "iiitt-tnp",
     },
     {
         name: "DR. D. SURESH",
@@ -234,7 +234,7 @@ export const heads = [
         imageUrl: "/teams/Suresh.jpeg",
         email: "sureshd@iiitt.ac.in",
         phone: "8827958387",
-        linkedinId: "tnp-cell-iiit-tiruchirappalli",
+        linkedinId: "iiitt-tnp",
     },
 ];
 
@@ -299,8 +299,8 @@ export const quickLink1s = [
     },
     {
         icon: <Linkedin className='h-4' />,
-        href: "https://www.linkedin.com/in/tnp-cell-iiit-tiruchirappalli",
-        title: "@tnp-cell-iiit-tiruchirappalli"
+        href: "https://www.linkedin.com/in/iiitt-tnp",
+        title: "@iiitt-tnp"
     },
     {
         icon: <Twitter className='h-4' />,
