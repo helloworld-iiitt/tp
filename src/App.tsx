@@ -1,10 +1,12 @@
+import { Route, Routes } from 'react-router-dom';
 import Footer from './components/footer/Footer'
 import Nav from './components/header'
 import Home from './pages/Home';
 import { motion } from 'framer-motion';
+import ForRecruiters from './pages/ForRecruiters';
 
 
-export default function Routes() {
+export default function App() {
 
   return (
     <>
@@ -14,7 +16,10 @@ export default function Routes() {
         animate={{ opacity: 1 }}
         transition={{ ease: 'easeInOut', duration: 1 }}
       >
-        <Home />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/for-recruiters' element={<ForRecruiters />} />
+        </Routes>
       </motion.div>
       <Footer />
     </>
