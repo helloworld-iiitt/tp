@@ -1,0 +1,5 @@
+echo "Building ... "
+npm run build
+echo "\n\nadding dist files in stagging area\n\n"
+git add dist/*
+echo "\ndone\n"
