@@ -9,7 +9,7 @@ export const navigation = [
     { name: 'Why Recruit@IIITT', href: '/#why-recruit@IIITT', current: false, icon: <Search /> },
     { name: 'For Recruiters', href: '/for-recruiters', current: false, icon: <UserSearch /> },
     { name: 'Teams', href: '/#teams', current: false, icon: <Users /> },
-    { name: 'Contact Us', href: '/#contact-us', current: false, icon: <MessageCircle /> },
+    { name: 'Contact Us', href: '#contact-us', current: false, icon: <MessageCircle /> },
 ]
 
 

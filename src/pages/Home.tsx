@@ -8,6 +8,7 @@ import CompaniesCard from "@/components/why-recruit-us/CompaniesCard";
 import Statistics from "@/components/statistic/Statistics";
 import Gallary from "@/components/gallary/Gallary";
 
+
 export default function Home() {
     return (
         <>
