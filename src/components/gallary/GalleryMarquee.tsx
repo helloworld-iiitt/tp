@@ -1,13 +1,12 @@
 import Marquee from 'react-fast-marquee';
-import { LazyLoadImage, trackWindowScroll, LazyComponentProps } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import ImageLoader from '@/components/ui/ImageLoader';
 
-interface GalleryMarqueeProps extends LazyComponentProps {
+interface GalleryMarqueeProps {
     pics: string[];
     delay: number;
 }
 
-function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
+export default function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
     return (
         <Marquee
             pauseOnHover
@@ -19,16 +18,8 @@ function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
             {
                 pics.map((company, index) => (
                     <div key={index} className=' border-4 border-white relative'>
-                        <LazyLoadImage
-                            // loading="lazy"
-                            placeholderSrc='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
-                            wrapperProps={{
-                                // If you need to, you can tweak the effect transition using the wrapper style.
-                                style: { transitionDelay: "0.5s" },
-                            }}
-                            effect="blur"
-                            src={company}
-                            alt={company}
+                        <ImageLoader
+                            imgUrl={company}
                             className='h-40 w-48 object-fill'
                         />
                     </div>
@@ -37,5 +28,3 @@ function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
         </Marquee>
     )
 }
-
-export default trackWindowScroll(GalleryMarquee);

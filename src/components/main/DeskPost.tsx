@@ -6,6 +6,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
+import ImageLoader from '../ui/ImageLoader';
 
 export default function DeskPost() {
     return (
@@ -20,10 +21,8 @@ export default function DeskPost() {
                 <h1 className='text-green-500 font-bold text-2xl md:text-2xl text-center'>FROM THE DIRECTOR&apos;S DESK</h1>
                 <section className='relative flex items-center flex-col py-2'>
                     {/* <div className=' relative'> */}
-                    <img
-                        loading="lazy"
-                        src='/teams/director.png'
-                        alt='director'
+                    <ImageLoader
+                        imgUrl='/teams/director.png'
                         className='rounded-md object-contain h-[200px]'
                     />
                     {/* </div> */}
@@ -116,10 +115,8 @@ export default function DeskPost() {
                 <h1 className='text-green-500 font-bold text-2xl md:text-2xl text-center'>FROM THE TPO</h1>
                 <section className='relative flex items-center py-2 flex-col'>
                     {/* <div className='rounded-md w-[150px]  lg:w-[200px] h-[200px] relative'> */}
-                    <img
-                        loading="lazy"
-                        src='/teams/devasena1.jpg'
-                        alt='director'
+                    <ImageLoader
+                        imgUrl='/teams/devasena1.jpg'
                         className='rounded-md object-contain h-[200px]'
                     />
                     {/* </div> */}
