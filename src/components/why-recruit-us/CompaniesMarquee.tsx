@@ -2,23 +2,23 @@ import Marquee from 'react-fast-marquee';
 import { LazyLoadImage, trackWindowScroll, LazyComponentProps } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-interface GalleryMarqueeProps extends LazyComponentProps {
+interface CompaniesMarqueeProps extends LazyComponentProps {
     pics: string[];
-    delay: number;
+    direction?: "left" | "right" | "up" | "down" | undefined;
 }
 
-function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
+function CompaniesMarquee({ pics, direction }: CompaniesMarqueeProps) {
     return (
         <Marquee
             pauseOnHover
-            delay={delay}
+            direction={direction}
             gradient
-            gradientColor="#f8ffeb"
-            className='flex justify-evenly items-center'
+            // gradientColor="#f8ffeb"
+            className='flex justify-evenly gap-2 items-center'
         >
             {
                 pics.map((company, index) => (
-                    <div key={index} className=' border-4 border-white relative'>
+                    <div key={index} className='relative'>
                         <LazyLoadImage
                             // loading="lazy"
                             placeholderSrc='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
@@ -29,7 +29,7 @@ function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
                             effect="blur"
                             src={company}
                             alt={company}
-                            className='h-40 w-48 object-fill'
+                            className='object-scale-down mix-blend-color-burn- aspect-[3/2] mx-5 h-24 w-32'
                         />
                     </div>
                 ))
@@ -38,4 +38,4 @@ function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
     )
 }
 
-export default trackWindowScroll(GalleryMarquee);
+export default trackWindowScroll(CompaniesMarquee);
