@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import {
     Sheet,
@@ -7,6 +6,7 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from 'lucide-react';
 import { navigation } from '@/lib/constants/home';
+
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
