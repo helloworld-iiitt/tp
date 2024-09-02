@@ -112,8 +112,8 @@ export const barChartData = [
 ]
 
 export const pieChartData = [
-    { title: "placed", count: 80, fill: "#17726d" },
-    { title: "notPlaced", count: 20, fill: "#eae4d2" },
+    { title: "placed", count: 74, fill: "#17726d" },
+    { title: "notPlaced", count: 26, fill: "#eae4d2" },
 ]
 
 // teams
