@@ -235,7 +235,7 @@ export const pics = [
 ];
 export const pic1s = [
     '/gallary/pic(11).jpg', '/gallary/pic(21).JPG', '/gallary/pic(32).JPG', '/gallary/pic(42).jpg', '/gallary/pic(53).jpg',
-    '/gallary/pic(12).jpg', '/gallary/pic(22).JPG', '/gallary/pic(33).JPG', '/gallary/pic(43).jpg', '/gallary/pic(6).jpg',
+    '/gallary/pic(12).jpg', '/gallary/pic(54).jpg', '/gallary/pic(22).JPG', '/gallary/pic(33).JPG', '/gallary/pic(43).jpg', '/gallary/pic(6).jpg',
     '/gallary/pic(13).jpg', '/gallary/pic(23).JPG', '/gallary/pic(34).JPG', '/gallary/pic(44).jpg', '/gallary/pic(7).jpg',
     '/gallary/pic(14).jpg', '/gallary/pic(24).JPG', '/gallary/pic(35).JPG', '/gallary/pic(45).jpg', '/gallary/pic(8).jpg'
 ];
