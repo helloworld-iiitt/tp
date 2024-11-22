@@ -1,22 +1,15 @@
-import React from 'react';
 import Mobile from './Mobile';
 import { navigation } from '@/lib/constants/home';
 
 
 
 const Navbar = () => {
-    React.useEffect(() => {
-        const htmlElement = document.querySelector('html');
-        if (!htmlElement) return;
-        // const dataScrollValue = htmlElement.getAttribute('data-scroll');
-        //    eslint-disable-next-line
-    }, []);
 
     return (
-        <nav className={`w-full duration-300 py-4 fixed backdrop-blur-lg px-6 items-center bg-white bg-opacity-50 lg:px-8 flex justify-between shadow z-10 top-0`}>
+        <nav className="w-full duration-300 py-4 fixed backdrop-blur-lg px-6 items-center bg-white bg-opacity-50 lg:px-8 flex justify-between shadow z-10 top-0">
             {/* LOGO */}
             <a href='/'>
-                <div className={`flex gap-2 items-center`}>
+                <div className="flex gap-2 items-center">
                     <img
                         loading="lazy"
                         src='/logo.png'

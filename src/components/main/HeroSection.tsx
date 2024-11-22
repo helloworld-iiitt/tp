@@ -1,5 +1,5 @@
 import { Button } from '../ui/button';
-import { FileText, Mail } from 'lucide-react';
+import { ChartNoAxesColumnIncreasing, FileText, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function HeroSection() {
@@ -31,7 +31,10 @@ export default function HeroSection() {
                     <a href='/docs/Placement Brochure IIIT Trichy 2024.pdf' target='_blank'>
                         <Button variant='outline' className='w-[90%] sm:w-full'><FileText className='h-4' /> DOWNLOAD BROCHURE</Button>
                     </a>
-                    {/* <Button variant='outline'><ArrowDownToLine className='h-4' /> PLACEMENT DETAILS</Button> */}
+                    <a href='/docs/Placement Details IIIT Trichy 2024.pdf' target='_blank'>
+                        <Button variant='outline' className='w-[90%] sm:w-full'><ChartNoAxesColumnIncreasing className='h-4' /> PLACEMENT DETAILS</Button>
+                    </a>
+                    {/* <Button variant='outline'><ChartNoAxesColumnIncreasing className='h-4' /> PLACEMENT DETAILS</Button> */}
                 </section>
             </motion.div>
         </div >

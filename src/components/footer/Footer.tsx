@@ -51,7 +51,7 @@ const Footer = () => {
                         {
                             navigation.map((nav, index) => (
                                 <li key={index} className='mb-2 md:mb-5'>
-                                    <a href={nav.href} target="_blank" className="text-offwhite text-sm font-normal  mb-4 md:mb-6  space-links">{nav.name}</a>
+                                    <a href={nav.href} className="text-offwhite text-sm font-normal  mb-4 md:mb-6  space-links">{nav.name}</a>
                                 </li>
                             ))
                         }

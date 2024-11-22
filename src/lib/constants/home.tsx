@@ -1,4 +1,4 @@
-import { Bug, CodeXml, GraduationCap, Landmark, LineChart, PersonStanding, SmartphoneNfc, Wifi } from "lucide-react";
+import { Bug, ChartNoAxesColumnIncreasing, CodeXml, GraduationCap, Landmark, LineChart, PersonStanding, SmartphoneNfc, Wifi } from "lucide-react";
 import { Globe, Home, MessageCircle, Search, UserRound, Users, UserSearch } from 'lucide-react';
 import { FileText, Linkedin, Mail, Phone, Twitter } from "lucide-react";
 
@@ -213,11 +213,11 @@ export const quickLink2s = [
         href: "/docs/Placement Brochure IIIT Trichy 2024.pdf",
         title: "BROCHURE"
     },
-    // {
-    //     icon: <ArrowDownToLine className='h-4' />,
-    //     href: "",
-    //     title: "PLACEMENT DETAILS"
-    // },
+    {
+        icon: <ChartNoAxesColumnIncreasing className='h-4' />,
+        href: "/docs/Placement Details IIIT Trichy 2024.pdf",
+        title: "PLACEMENT DETAILS"
+    },
     {
         icon: <Globe className='h-4' />,
         href: "http://iiitt.ac.in/",

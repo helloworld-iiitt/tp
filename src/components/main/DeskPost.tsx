@@ -28,9 +28,9 @@ export default function DeskPost() {
                     {/* </div> */}
 
                     <div className='my-2 text-center'>
-                        <h1 className='text-green-500 font-bold text-base sm:text-lg text-center'>DR. NARASIMHA SARMA NVS</h1>
+                        <h1 className='text-green-500 font-bold text-base sm:text-lg text-center'>Prof. Usha Natesan</h1>
                         <p className='text-sm text-gray-600'>
-                            Director, Tiruchirappalli
+                            Director In-charge, Tiruchirappalli
                         </p>
                     </div>
                 </section>
@@ -87,10 +87,10 @@ export default function DeskPost() {
                                         professional partners in the future.
                                     </p>
                                     <p className='text-base text-justify font-semibold text-gray-600'>
-                                        DR. NARASIMHA SARMA NVS
+                                        PROF. USHA NATESAN
                                     </p>
                                     <p className='text-base text-justify text-gray-600'>
-                                        Director
+                                        Director In-charge
                                         <br />
                                         IIIT, Tiruchirappalli
                                     </p>
