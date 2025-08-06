@@ -28,9 +28,9 @@ export default function DeskPost() {
                     {/* </div> */}
 
                     <div className='my-2 text-center'>
-                        <h1 className='text-green-500 font-bold text-base sm:text-lg text-center'>DR. NARASIMHA SARMA NVS</h1>
+                        <h1 className='text-green-500 font-bold text-base sm:text-lg text-center'>Prof. Usha Natesan</h1>
                         <p className='text-sm text-gray-600'>
-                            Director, Tiruchirappalli
+                            Director, IIIT Tiruchirappalli
                         </p>
                     </div>
                 </section>
@@ -87,7 +87,7 @@ export default function DeskPost() {
                                         professional partners in the future.
                                     </p>
                                     <p className='text-base text-justify font-semibold text-gray-600'>
-                                        DR. NARASIMHA SARMA NVS
+                                        Prof. Usha Natesan
                                     </p>
                                     <p className='text-base text-justify text-gray-600'>
                                         Director
@@ -116,15 +116,15 @@ export default function DeskPost() {
                 <section className='relative flex items-center py-2 flex-col'>
                     {/* <div className='rounded-md w-[150px]  lg:w-[200px] h-[200px] relative'> */}
                     <ImageLoader
-                        imgUrl='/teams/devasena1.jpg'
+                        imgUrl='/teams/anoop.jpg'
                         className='rounded-md object-contain h-[200px]'
                     />
                     {/* </div> */}
 
                     <div className='my-2'>
-                        <h1 className='text-green-500 font-bold text-sm sm:text-lg text-center'>DR. G. DEVASENA</h1>
+                        <h1 className='text-green-500 font-bold text-sm sm:text-lg text-center'>Dr. Anoop Jacob Thomas</h1>
                         <p className='text-sm text-gray-600'>
-                            Placement Coordinator, Tiruchirappalli
+                            Placement Coordinator, IIIT Tiruchirappalli
                         </p>
                     </div>
                 </section>
@@ -168,7 +168,7 @@ export default function DeskPost() {
                                         give an opportunity to present their abilities.
                                     </p>
                                     <p className='text-base text-justify font-semibold text-gray-600'>
-                                        DR. G. DEVASENA
+                                        Dr. Anoop Jacob Thomas
                                     </p>
                                     <p className='text-base text-justify text-gray-600'>
                                         Placement Coordinator

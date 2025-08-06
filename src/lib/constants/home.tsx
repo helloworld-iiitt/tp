@@ -106,81 +106,99 @@ export const companies2 = [
 
 // statistics
 export const barChartData = [
-    { title: "CSE", highCTC: 46, avgCTC: 12, medianCTC: 7 },
-    { title: "ECE", highCTC: 10, avgCTC: 7, medianCTC: 8 },
-    { title: "Overall", highCTC: 46, avgCTC: 10, medianCTC: 7 }
+    { title: "CSE", highCTC: 46.67, avgCTC: 18.10, medianCTC: 9.04 },
+    { title: "ECE", highCTC: 46.67, avgCTC: 21.06, medianCTC: 8.00 },
+    { title: "Overall", highCTC: 46.67, avgCTC: 19.28, medianCTC: 8.00 }
 ]
 
 export const pieChartData = [
-    { title: "placed", count: 80, fill: "#17726d" },
-    { title: "notPlaced", count: 20, fill: "#eae4d2" },
+    { title: "placed", count: 40, fill: "#17726d" },
+    { title: "notPlaced", count: 60, fill: "#eae4d2" },
 ]
 
 // teams
 export const heads = [
     {
-        name: "DR. G. DEVASENA",
+        name: "Dr. Anoop Jacob Thomas",
         role: "Training and Placement Officer",
-        imageUrl: "/teams/devasena.jpg",
+        imageUrl: "/teams/anoop.jpg",
         email: "placement@iiitt.ac.in",
-        phone: "9042473621",
+        phone: "7696265939",
         linkedinId: "iiitt-tnp",
-    },
-    {
-        name: "DR. D. SURESH",
-        role: "Additional Incharge",
-        imageUrl: "/teams/Suresh.jpeg",
-        email: "sureshd@iiitt.ac.in",
-        phone: "8827958387",
-        linkedinId: "iiitt-tnp",
-    },
+    }
 ];
 
 export const representatives = [
     {
-        name: "AKASH YADAV",
+        name: "PRATEEK GAURAV",
         role: "TnP Representatives",
-        imageUrl: "/teams/akash_yadav.jpg",
-        email: "211205@iiitt.ac.in",
-        phone: "9306854791, 9518243295",
-        linkedinId: "akash-yadav-23897b228",
+        imageUrl: "/teams/prateek_gaurav.jpg",
+        email: "242103@iiitt.ac.in",
+        phone: "8093297445",
+        linkedinId: "prateekgaurav7296",
     },
     {
-        name: "AYUSH KUMAR",
-        role: "Site Designer & Maintainer, TnP Rep",
-        imageUrl: "/teams/ayush_kumar.jpeg",
-        email: "211107@iiitt.ac.in",
+        name: "HEMANSHU CHOUDHARY",
+        role: "TnP Representatives",
+        imageUrl: "/teams/hemanshu.jpg",
+        email: "221220@iiitt.ac.in",
         phone: "7061357391",
-        linkedinId: "rtnayush",
+        linkedinId: "hemanshuchoudhary",
         // githubUrl: "",
     },
     {
-        name: "ATHARVA SANJAY MORE",
+        name: "THIVYA PU",
         role: "TnP Representatives",
-        imageUrl: "/teams/atharva_more.jpg",
-        email: "211105@iiitt.ac.in",
+        imageUrl: "/teams/thivya.jpg",
+        email: "242105@iiitt.ac.in",
         phone: "9324373587",
-        linkedinId: "atharvamor3",
+        linkedinId: "thivya-pu-446848378",
         // githubUrl: "",
     },
     {
-        name: "G. CHARAN",
+        name: "KARTIKEYA SINGH",
         role: "TnP Representatives",
-        imageUrl: "/teams/g_charan.jpg",
-        email: "211210@iiitt.ac.in",
+        imageUrl: "/teams/kartikeya.jpg",
+        email: "221120@iiitt.ac.in",
         phone: "6301745974",
-        linkedinId: "charan-galanki-161612253",
+        linkedinId: "singhkartikeya28",
         // githubUrl: "",
     },
     {
-        name: "Sayan Das",
+        name: "ARVIND MISHRA",
         role: "TnP Representatives",
-        imageUrl: "/teams/sanyan_das.jpg",
-        email: "232103@iiitt.ac.in",
+        imageUrl: "/teams/arvind.jpg",
+        email: "221207@iiitt.ac.in",
         phone: "9612547652",
-        linkedinId: "sayan-das-631751217",
+        linkedinId: "arvind-mishra-34b560257",
         // githubUrl: "",
     },
+    {
+        name: "PRASAD VENKAT",
+        role: "TnP Representatives",
+        imageUrl: "/teams/venkat.jpg",
+        email: "221140@iiitt.ac.in",
+        phone: "9612547652",
+        linkedinId: "prasadvenkat1008",
+        // githubUrl: "",
+    },
+    {
+        name: "CHARAN PAL",
+        role: "TnP Representatives",
+        imageUrl: "/teams/charan.jpg",
+        email: "221140@iiitt.ac.in",
+        phone: "9612547652",
+        linkedinId: "charan-pal-74710a244",
+        // githubUrl: "",
+    },   {
+        name: "RITUL MISHRA",
+        role: "TnP Representatives",
+        imageUrl: "/teams/ritul.jpg",
+        email: "221243@iiitt.ac.in",
+        phone: "8755862526",
+        linkedinId: "ritul-mishra-6783b4269",
+        // githubUrl: "",
+    }
 ];
 
 // Footer
@@ -192,8 +210,8 @@ export const quickLink1s = [
     },
     {
         icon: <Phone className='h-4' />,
-        href: "https://api.whatsapp.com/send?phone=9042473621",
-        title: "+91 9042473621"
+        href: "https://api.whatsapp.com/send?phone=7696265939",
+        title: "+91 7696265939"
     },
     {
         icon: <Linkedin className='h-4' />,
@@ -210,7 +228,7 @@ export const quickLink1s = [
 export const quickLink2s = [
     {
         icon: <FileText className='h-4' />,
-        href: "/docs/Placement Brochure IIIT Trichy 2024.pdf",
+        href: "/docs/Placement Brochure IIIT Trichy 2026.pdf",
         title: "BROCHURE"
     },
     // {
