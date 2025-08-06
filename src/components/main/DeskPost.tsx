@@ -164,7 +164,7 @@ export default function DeskPost() {
                                         and contributed for giving an extraordinary opportunity to T&P Cell to
                                         fulfil its responsibilities. This year, I present you the exceptional
                                         candidates/graduates for recruitment at your reputed organizations.
-                                        Thanks in advance for your sincere endeavour and coxoperation to
+                                        Thanks in advance for your sincere endeavour and co-operation to
                                         give an opportunity to present their abilities.
                                     </p>
                                     <p className='text-base text-justify font-semibold text-gray-600'>
