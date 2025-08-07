@@ -124,7 +124,8 @@ export const heads = [
         imageUrl: "/teams/anoop.jpg",
         email: "placement@iiitt.ac.in",
         phone: "7696265939",
-        linkedinId: "iiitt-tnp",
+        linkedinId: "anoopjt",
+        
     }
 ];
 
