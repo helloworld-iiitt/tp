@@ -21,8 +21,8 @@ export default function Statistics() {
                 <CardFooter>
                     <div className="w-full flex flex-col items-center text-center md:items-end">
 
-                        <h1 className="font-semibold text-base md:text-xl">Internships for 2024 Batch</h1>
-                        <h2 className="text-sm sm:text-base text-gray-600">Highest Stipend: 75000/month</h2>
+                        <h1 className="font-semibold text-base md:text-xl">Internships for 2025 Batch</h1>
+                        <h2 className="text-sm sm:text-base text-gray-600">Highest Stipend: 1,15,000/month</h2>
                     </div>
 
                 </CardFooter>
