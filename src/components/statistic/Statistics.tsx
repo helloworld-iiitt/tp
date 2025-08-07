@@ -9,7 +9,7 @@ export default function Statistics() {
             <Card className="">
                 <CardHeader className='text-2xl md:text-3xl font-semibold'>
                     <CardTitle>Statistics</CardTitle>
-                    <CardDescription>Batch 2025-26 (in LPA)</CardDescription>
+                    <CardDescription>Batch 2024-25 (in LPA)</CardDescription>
                 </CardHeader>
                 <CardContent className="grid md:grid-cols-3 justify-items-center">
                     {/* <div className="grid justify-items-center"> */}
