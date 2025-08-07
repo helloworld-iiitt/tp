@@ -48,3 +48,13 @@ export default tseslint.config({
   },
 })
 ```
+
+```bash
+Deployed Using Docker:
+
+Steps to deploy
+1) Clone the repository
+2) build using docker build -t website_img_name
+3) run the same on public hosted port using docker run -p public_facing_port:internal_port website_img_name
+
+```
