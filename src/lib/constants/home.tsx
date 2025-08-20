@@ -6,7 +6,7 @@ import { FileText, Linkedin, Mail, Phone, Twitter } from "lucide-react";
 export const navigation = [
     { name: 'Home', href: '/', current: true, icon: <Home /> },
     { name: 'About Us', href: '/#about-us', current: false, icon: <UserRound /> },
-    { name: 'Why Recruit@IIITT', href: '/#why-recruit@IIITT', current: false, icon: <Search /> },
+    { name: 'Why Recruit@IIITT', href: '/#why-recruit', current: false, icon: <Search /> },
     { name: 'For Recruiters', href: '/for-recruiters', current: false, icon: <UserSearch /> },
     { name: 'Teams', href: '/#teams', current: false, icon: <Users /> },
     { name: 'Contact Us', href: '#contact-us', current: false, icon: <MessageCircle /> },
@@ -70,38 +70,38 @@ export const clubCards = [
 // company
 
 export const companies = [
-    "/companies/Tejas_Networks_Logo.jpg",
-    "/companies/ip-tronk.png",
-    "/companies/quantum-phinance.png",
-    "/companies/adp.png",
-    "/companies/juspay.png",
-    "/companies/ramco.png",
-    "/companies/amazon.png",
-    "/companies/landmark-group.png",
-    "/companies/razor-group.png",
+    "http://store.iiitt.ac.in/placement_images/companies/Tejas_Networks_Logo.jpg",
+    "http://store.iiitt.ac.in/placement_images/companies/ip-tronk.png",
+    "http://store.iiitt.ac.in/placement_images/companies/quantum-phinance.png",
+    "http://store.iiitt.ac.in/placement_images/companies/adp.png",
+    "http://store.iiitt.ac.in/placement_images/companies/juspay.png",
+    "http://store.iiitt.ac.in/placement_images/companies/ramco.png",
+    "http://store.iiitt.ac.in/placement_images/companies/amazon.png",
+    "http://store.iiitt.ac.in/placement_images/companies/landmark-group.png",
+    "http://store.iiitt.ac.in/placement_images/companies/razor-group.png",
 ]
 export const companies1 = [
-    "/companies/cgi.png",
-    "/companies/mindtree.png",
-    "/companies/ruminds.png",
-    "/companies/codetantra.png",
-    "/companies/modelon.png",
-    "/companies/simemens.png",
-    "/companies/cognizant.png",
-    "/companies/navitas.png",
-    "/companies/tcs.png",
-    "/companies/elcot.png",
-    "/companies/nvidia.png",
+    "http://store.iiitt.ac.in/placement_images/companies/cgi.png",
+    "http://store.iiitt.ac.in/placement_images/companies/mindtree.png",
+    "http://store.iiitt.ac.in/placement_images/companies/ruminds.png",
+    "http://store.iiitt.ac.in/placement_images/companies/codetantra.png",
+    "http://store.iiitt.ac.in/placement_images/companies/modelon.png",
+    "http://store.iiitt.ac.in/placement_images/companies/simemens.png",
+    "http://store.iiitt.ac.in/placement_images/companies/cognizant.png",
+    "http://store.iiitt.ac.in/placement_images/companies/navitas.png",
+    "http://store.iiitt.ac.in/placement_images/companies/tcs.png",
+    "http://store.iiitt.ac.in/placement_images/companies/elcot.png",
+    "http://store.iiitt.ac.in/placement_images/companies/nvidia.png",
 ]
 export const companies2 = [
-    "/companies/value-labs.png",
-    "/companies/epam.png",
-    "/companies/optum.png",
-    "/companies/virtusa.png",
-    "/companies/ibm.png",
-    "/companies/paytm.png",
-    "/companies/infosys.png",
-    "/companies/publicic-sapient.png"
+    "http://store.iiitt.ac.in/placement_images/companies/value-labs.png",
+    "http://store.iiitt.ac.in/placement_images/companies/epam.png",
+    "http://store.iiitt.ac.in/placement_images/companies/optum.png",
+    "http://store.iiitt.ac.in/placement_images/companies/virtusa.png",
+    "http://store.iiitt.ac.in/placement_images/companies/ibm.png",
+    "http://store.iiitt.ac.in/placement_images/companies/paytm.png",
+    "http://store.iiitt.ac.in/placement_images/companies/infosys.png",
+    "http://store.iiitt.ac.in/placement_images/companies/publicic-sapient.png"
 ];
 
 // statistics
@@ -121,7 +121,7 @@ export const heads = [
     {
         name: "Dr. Anoop Jacob Thomas",
         role: "Training and Placement Officer",
-        imageUrl: "/teams/anoop.jpg",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/anoop.jpg",
         email: "placement@iiitt.ac.in",
         phone: "7696265939",
         linkedinId: "anoopjt",
@@ -132,69 +132,69 @@ export const heads = [
 export const representatives = [
     {
         name: "PRATEEK GAURAV",
-        role: "TnP Representatives",
-        imageUrl: "/teams/prateek_gaurav.jpg",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/prateek_gaurav.jpg",
         email: "242103@iiitt.ac.in",
         phone: "8093297445",
         linkedinId: "prateekgaurav7296",
     },
     {
         name: "HEMANSHU CHOUDHARY",
-        role: "TnP Representatives",
-        imageUrl: "/teams/hemanshu.jpg",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/hemanshu.jpg",
         email: "221220@iiitt.ac.in",
-        phone: "7061357391",
+        phone: "7021552408",
         linkedinId: "hemanshuchoudhary",
         // githubUrl: "",
     },
     {
         name: "THIVYA PU",
-        role: "TnP Representatives",
-        imageUrl: "/teams/thivya.jpg",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/thivya.jpg",
         email: "242105@iiitt.ac.in",
-        phone: "9324373587",
+        phone: "7010298470",
         linkedinId: "thivya-pu-446848378",
         // githubUrl: "",
     },
     {
         name: "KARTIKEYA SINGH",
-        role: "TnP Representatives",
-        imageUrl: "/teams/kartikeya.jpg",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/kartikeya.jpg",
         email: "221120@iiitt.ac.in",
-        phone: "6301745974",
+        phone: "8052835194",
         linkedinId: "singhkartikeya28",
         // githubUrl: "",
     },
     {
         name: "ARVIND MISHRA",
-        role: "TnP Representatives",
-        imageUrl: "/teams/arvind.jpg",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/arvind.jpg",
         email: "221207@iiitt.ac.in",
-        phone: "9612547652",
+        phone: "8005542019",
         linkedinId: "arvind-mishra-34b560257",
         // githubUrl: "",
     },
     {
         name: "PRASAD VENKAT",
-        role: "TnP Representatives",
-        imageUrl: "/teams/venkat.jpg",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/venkat.jpg",
         email: "221140@iiitt.ac.in",
-        phone: "9612547652",
+        phone: "7331134884",
         linkedinId: "prasadvenkat1008",
         // githubUrl: "",
     },
     {
         name: "CHARAN PAL",
-        role: "TnP Representatives",
-        imageUrl: "/teams/charan.jpg",
-        email: "221140@iiitt.ac.in",
-        phone: "9612547652",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/charan.jpg",
+        email: "242201@iiitt.ac.in",
+        phone: "9701422789",
         linkedinId: "charan-pal-74710a244",
         // githubUrl: "",
     },   {
         name: "RITUL MISHRA",
-        role: "TnP Representatives",
-        imageUrl: "/teams/ritul.jpg",
+        role: "T&P Representative",
+        imageUrl: "http://store.iiitt.ac.in/placement_images/teams/ritul.jpg",
         email: "221243@iiitt.ac.in",
         phone: "8755862526",
         linkedinId: "ritul-mishra-6783b4269",
@@ -229,7 +229,7 @@ export const quickLink1s = [
 export const quickLink2s = [
     {
         icon: <FileText className='h-4' />,
-        href: "/docs/Placement Brochure IIIT Trichy 2026.pdf",
+        href: "http://store.iiitt.ac.in/placement_images/docs/Placement Brochure IIIT Trichy 2026.pdf",
         title: "BROCHURE"
     },
     // {
@@ -247,20 +247,20 @@ export const quickLink2s = [
 // Gallary
 
 export const pics = [
-    '/gallary/pic(1).jpeg', '/gallary/pic(19).JPG', '/gallary/pic(29).JPG', '/gallary/pic(4).jpg', '/gallary/pic(5).jpg',
-    '/gallary/pic(1).jpg', '/gallary/pic(2).jpg', '/gallary/pic(3).jpg', '/gallary/pic(4).png', '/gallary/pic(50).jpg',
-    '/gallary/pic(1).png', '/gallary/pic(2).png', '/gallary/pic(30).JPG', '/gallary/pic(40).jpg', '/gallary/pic(51).jpg',
-    '/gallary/pic(10).jpg', '/gallary/pic(20).JPG', '/gallary/pic(31).JPG', '/gallary/pic(41).jpg', '/gallary/pic(52).jpg'
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(1).jpeg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(19).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(29).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(4).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(5).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(1).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(2).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(3).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(4).png', 'http://store.iiitt.ac.in/placement_images/gallary/pic(50).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(1).png', 'http://store.iiitt.ac.in/placement_images/gallary/pic(2).png', 'http://store.iiitt.ac.in/placement_images/gallary/pic(30).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(40).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(51).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(10).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(20).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(31).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(41).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(52).jpg'
 ];
 export const pic1s = [
-    '/gallary/pic(11).jpg', '/gallary/pic(21).JPG', '/gallary/pic(32).JPG', '/gallary/pic(42).jpg', '/gallary/pic(53).jpg',
-    '/gallary/pic(12).jpg', '/gallary/pic(22).JPG', '/gallary/pic(33).JPG', '/gallary/pic(43).jpg', '/gallary/pic(6).jpg',
-    '/gallary/pic(13).jpg', '/gallary/pic(23).JPG', '/gallary/pic(34).JPG', '/gallary/pic(44).jpg', '/gallary/pic(7).jpg',
-    '/gallary/pic(14).jpg', '/gallary/pic(24).JPG', '/gallary/pic(35).JPG', '/gallary/pic(45).jpg', '/gallary/pic(8).jpg'
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(11).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(21).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(32).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(42).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(53).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(12).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(22).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(33).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(43).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(6).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(13).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(23).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(34).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(44).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(7).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(14).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(24).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(35).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(45).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(8).jpg'
 ];
 export const pic2s = [
-    '/gallary/pic(15).jpg', '/gallary/pic(25).JPG', '/gallary/pic(36).JPG', '/gallary/pic(46).jpg', '/gallary/pic(9).jpg',
-    '/gallary/pic(16).jpg', '/gallary/pic(26).JPG', '/gallary/pic(37).JPG', '/gallary/pic(47).jpg',
-    '/gallary/pic(17).JPG', '/gallary/pic(27).JPG', '/gallary/pic(38).JPG', '/gallary/pic(48).jpg',
-    '/gallary/pic(18).JPG', '/gallary/pic(28).JPG', '/gallary/pic(39).jpg', '/gallary/pic(49).jpg'
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(15).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(25).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(36).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(46).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(9).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(16).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(26).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(37).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(47).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(17).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(27).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(38).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(48).jpg',
+    'http://store.iiitt.ac.in/placement_images/gallary/pic(18).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(28).JPG', 'http://store.iiitt.ac.in/placement_images/gallary/pic(39).jpg', 'http://store.iiitt.ac.in/placement_images/gallary/pic(49).jpg'
 ];

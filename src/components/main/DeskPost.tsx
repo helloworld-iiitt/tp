@@ -22,7 +22,7 @@ export default function DeskPost() {
                 <section className='relative flex items-center flex-col py-2'>
                     {/* <div className=' relative'> */}
                     <ImageLoader
-                        imgUrl='/teams/director.png'
+                        imgUrl='http://store.iiitt.ac.in/placement_images/teams/director.png'
                         className='rounded-md object-contain h-[200px]'
                     />
                     {/* </div> */}
@@ -116,7 +116,7 @@ export default function DeskPost() {
                 <section className='relative flex items-center py-2 flex-col'>
                     {/* <div className='rounded-md w-[150px]  lg:w-[200px] h-[200px] relative'> */}
                     <ImageLoader
-                        imgUrl='/teams/anoop.jpg'
+                        imgUrl='http://store.iiitt.ac.in/placement_images/teams/anoop.jpg'
                         className='rounded-md object-contain h-[200px]'
                     />
                     {/* </div> */}
@@ -124,7 +124,7 @@ export default function DeskPost() {
                     <div className='my-2'>
                         <h1 className='text-green-500 font-bold text-sm sm:text-lg text-center'>Dr. Anoop Jacob Thomas</h1>
                         <p className='text-sm text-gray-600'>
-                            Placement Coordinator, IIIT Tiruchirappalli
+                            Training and Placement Officer, IIIT Tiruchirappalli
                         </p>
                     </div>
                 </section>
