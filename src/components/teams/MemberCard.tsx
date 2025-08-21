@@ -8,9 +8,10 @@ import styles from '@/styles/MemberCard.module.css';
 import { useState } from "react";
 import { Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
-
+import { cdnurl } from "../ui/ImageLoader";
+import ImageLoader from "../ui/ImageLoader";
 const colors = ["#3DA3F4", "#F36E67", "#91CE93", "#FFD763"];
-const patterns = ["http://store.iiitt.ac.in/placement_images/patterns/double-bubble-outline.png", "more-leaves.png", "moroccan-flower.png", "spikes.png"];
+const patterns = [`${cdnurl}/patterns/double-bubble-outline.png`, "more-leaves.png", "moroccan-flower.png", "spikes.png"];
 
 export default function MemberCard({ idx, name, role, imageUrl, linkedinUrl, phone, email }: { idx: number, name: string, role: string, imageUrl: string, linkedinUrl: string, githubUrl?: string, phone: string, email: string }) {
     const [isHovered, setIsHovered] = useState(false);
@@ -46,13 +47,10 @@ export default function MemberCard({ idx, name, role, imageUrl, linkedinUrl, pho
                 >
                     <div className={`${styles.circle} ${isHovered ? styles.circlehover + " rounded-none object-fill m-0 border-none w-[180px] h-[180px]" : "m-[25px] border-4 shadow-lg border-white overflow-hidden object-fill h-[140px] w-[140px]"} relative`}
                     >
-                        <img
-                            loading="lazy"
-                            src={imageUrl || "/teams/logo.png"}
-                            alt=""
-                            className="object-cover absolute"
-                        />
-                    </div>
+                        <ImageLoader
+                            imgUrl={`teams/${imageUrl}`}
+                            className='h-40 w-48 object-fill'
+                        />               </div>
                 </CardHeader>
                 <CardContent className="my-2 pb-0">
                     <h1 className="font-bold text-lg tracking-tighter">{name}</h1>

@@ -5,7 +5,6 @@ interface GalleryMarqueeProps {
     pics: string[];
     delay: number;
 }
-
 export default function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
     return (
         <Marquee
@@ -19,7 +18,7 @@ export default function GalleryMarquee({ pics, delay }: GalleryMarqueeProps) {
                 pics.map((company, index) => (
                     <div key={index} className=' border-4 border-white relative'>
                         <ImageLoader
-                            imgUrl={company}
+                            imgUrl={`/gallary/${company}`}
                             className='h-40 w-48 object-fill'
                         />
                     </div>

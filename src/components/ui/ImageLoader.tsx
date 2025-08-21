@@ -5,7 +5,7 @@ interface ImageLoaderProps extends LazyComponentProps {
     imgUrl: string;
     className?: string;
 }
-
+export const cdnurl="http://store.iiitt.ac.in/placement_images";
 function ImageLoader({ imgUrl, className }: ImageLoaderProps) {
     return (
         <LazyLoadImage
@@ -15,7 +15,7 @@ function ImageLoader({ imgUrl, className }: ImageLoaderProps) {
                 style: { transitionDelay: "0.5s" },
             }}
             effect="blur"
-            src={imgUrl}
+            src={`${cdnurl}/${imgUrl}`}
             alt={imgUrl}
             className={className}
         />

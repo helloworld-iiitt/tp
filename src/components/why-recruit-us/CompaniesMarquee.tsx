@@ -5,7 +5,6 @@ interface CompaniesMarqueeProps {
     pics: string[];
     direction?: "left" | "right" | "up" | "down" | undefined;
 }
-
 export default function CompaniesMarquee({ pics, direction }: CompaniesMarqueeProps) {
     return (
         <Marquee
@@ -19,7 +18,7 @@ export default function CompaniesMarquee({ pics, direction }: CompaniesMarqueePr
                 pics.map((company, index) => (
                     <div key={index} className='relative'>
                         <ImageLoader
-                            imgUrl={company}
+                            imgUrl={`/companies/${company}`}
                             className='object-scale-down mix-blend-color-burn- aspect-[3/2] mx-5 h-24 w-32'
                         />
                     </div>
