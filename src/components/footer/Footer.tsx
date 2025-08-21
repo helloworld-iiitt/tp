@@ -1,24 +1,6 @@
 import { navigation, quickLink1s, quickLink2s } from "@/lib/constants/home";
 
 const Footer = () => {
-  const handleNavigationClick = (e: React.MouseEvent, href: string) => {
-    e.preventDefault();
-    const targetId = href.replace("#", "");
-
-    if (href.startsWith("http")) {
-      // External link → open in new tab
-      window.open(href, "noopener noreferrer");
-    } else if (window.location.pathname !== "/") {
-      // Internal link from another page → store target, go to home
-      sessionStorage.setItem("scrollTo", targetId);
-      window.location.href = "/";
-    } else {
-      // Already on home → smooth scroll
-      document.getElementById(targetId)?.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <div id="contact-us" className="bg-gray-50 ">
