@@ -150,7 +150,7 @@ export const representatives = [ //NOTE: stored in /teams folder
     {
         name: "KOSHTUBH SHARAN RAJ",
         role: "T&P Representative",
-        imageUrl: "koshtubh.jpg",
+        imageUrl: "koustubh.jpg",
         email: "252203@iiitt.ac.in",
         phone: "8448771138",
         linkedinId: "koshtubh-raj-556a8424a",
@@ -238,7 +238,8 @@ export const quickLink1s = [
 export const quickLink2s = [
     {
         icon: <FileText className='h-4' />,
-        href: "/docs/Placement Brochure IIIT Trichy 2026.pdf",
+        href:"/docs/IIITT 26 brochure.pdf",
+        //href: "/docs/Placement Brochure IIIT Trichy 2026.pdf",Note: Older Document
         title: "BROCHURE"
     },
     // {

@@ -1,4 +1,5 @@
 import { navigation, quickLink1s, quickLink2s } from "@/lib/constants/home";
+import { cdnurl } from "../ui/ImageLoader";
 
 const Footer = () => {
 
@@ -78,7 +79,7 @@ const Footer = () => {
             {quickLink2s.map((nav, index) => (
               <li key={index} className="md:mb-5">
                 <a
-                  href={nav.href}
+                href= {`${cdnurl}/${nav.href}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-offwhite text-sm font-normal whitespace-nowrap mb-4 md:mb-6 space-links flex justify-center md:justify-start gap-2 items-center"
