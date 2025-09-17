@@ -1,7 +1,8 @@
 import { Button } from '../ui/button';
 import { FileText, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import { cdnurl } from '../ui/ImageLoader';
+import { quickLink2s } from '@/lib/constants/home';
 export default function HeroSection() {
     return (
         <div className='hero-parallax flex justify-center items-center'>
@@ -28,9 +29,11 @@ export default function HeroSection() {
                     <a href='/#contact-us' >
                         <Button variant='outline' className='w-[90%] sm:w-full'><Mail className='h-4' /> CONTACT US</Button>
                     </a>
-                    <a href='http://store.iiitt.ac.in/placement_images/docs/Placement Brochure IIIT Trichy 2026.pdf' target='_blank'>
+
+                    <a href={`${cdnurl}/${quickLink2s[0].href}`} target="_blank" rel="noopener noreferrer">
                         <Button variant='outline' className='w-[90%] sm:w-full'><FileText className='h-4' /> DOWNLOAD BROCHURE</Button>
                     </a>
+
                     {/* <Button variant='outline'><ArrowDownToLine className='h-4' /> PLACEMENT DETAILS</Button> */}
                 </section>
             </motion.div>
