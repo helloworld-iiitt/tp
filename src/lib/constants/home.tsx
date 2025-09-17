@@ -106,9 +106,9 @@ export const companies2 = [
 
 // statistics
 export const barChartData = [
-    { title: "CSE", highCTC: 46.67, avgCTC: 18.10, medianCTC: 9.04 },
-    { title: "ECE", highCTC: 46.67, avgCTC: 21.06, medianCTC: 8.00 },
-    { title: "Overall", highCTC: 46.67, avgCTC: 19.28, medianCTC: 8.00 }
+    { title: "CSE", highCTC: 46.67, avgCTC: 18.67, medianCTC: 12.50 },
+    { title: "ECE", highCTC: 46.67, avgCTC: 20.48, medianCTC: 8.00 },
+    { title: "Overall", highCTC: 46.67, avgCTC: 19.51, medianCTC: 10.52 }
 ]
 
 export const pieChartData = [
@@ -125,7 +125,7 @@ export const heads = [
         email: "placement@iiitt.ac.in",
         phone: "7696265939",
         linkedinId: "anoopjt",
-        
+
     }
 ];
 
@@ -148,14 +148,23 @@ export const representatives = [ //NOTE: stored in /teams folder
         // githubUrl: "",
     },
     {
-        name: "THIVYA PU",
+        name: "KOSHTUBH SHARAN RAJ",
         role: "T&P Representative",
-        imageUrl: "thivya.jpg",
-        email: "242105@iiitt.ac.in",
-        phone: "7010298470",
-        linkedinId: "thivya-pu-446848378",
-        // githubUrl: "",
+        imageUrl: "koshtubh.jpg",
+        email: "252203@iiitt.ac.in",
+        phone: "8448771138",
+        linkedinId: "koshtubh-raj-556a8424a",
+        //     // githubUrl: "",
     },
+    // {
+    //     name: "THIVYA PU",
+    //     role: "T&P Representative",
+    //     imageUrl: "thivya.jpg",
+    //     email: "242105@iiitt.ac.in",
+    //     phone: "7010298470",
+    //     linkedinId: "thivya-pu-446848378",
+    //     // githubUrl: "",
+    // },
     {
         name: "KARTIKEYA SINGH",
         role: "T&P Representative",
@@ -174,15 +183,15 @@ export const representatives = [ //NOTE: stored in /teams folder
         linkedinId: "arvind-mishra-34b560257",
         // githubUrl: "",
     },
-    {
-        name: "PRASAD VENKAT",
-        role: "T&P Representative",
-        imageUrl: "venkat.jpg",
-        email: "221140@iiitt.ac.in",
-        phone: "7331134884",
-        linkedinId: "prasadvenkat1008",
-        // githubUrl: "",
-    },
+    // {
+    //     name: "PRASAD VENKAT",
+    //     role: "T&P Representative",
+    //     imageUrl: "venkat.jpg",
+    //     email: "221140@iiitt.ac.in",
+    //     phone: "7331134884",
+    //     linkedinId: "prasadvenkat1008",
+    //     // githubUrl: "",
+    // },
     {
         name: "CHARAN PAL",
         role: "T&P Representative",
@@ -191,7 +200,7 @@ export const representatives = [ //NOTE: stored in /teams folder
         phone: "9701422789",
         linkedinId: "charan-pal-74710a244",
         // githubUrl: "",
-    },   {
+    }, {
         name: "RITUL MISHRA",
         role: "T&P Representative",
         imageUrl: "ritul.jpg",
