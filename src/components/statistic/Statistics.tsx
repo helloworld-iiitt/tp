@@ -24,10 +24,9 @@ export default function Statistics() {
                         <h1 className="font-semibold text-base md:text-xl">Internships for 2025 Batch</h1>
                         <h2 className="text-sm sm:text-base text-gray-600">Highest Stipend: 1,15,000/month</h2>
                     </div>
-
                 </CardFooter>
             </Card>
-
+            <p className="text-xs text-gray-500 mt-4 ml-3 text-left italic">* Data for students seeking or placed in jobs (excluding government roles).</p>
         </div >
     )
 }

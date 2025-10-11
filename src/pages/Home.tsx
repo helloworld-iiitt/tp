@@ -12,7 +12,7 @@ import Gallary from "@/components/gallary/Gallary";
 export default function Home() {
   useEffect(() => {
     const targetId = sessionStorage.getItem("scrollTo");
-    if (targetId) {
+    if (targetId) {~
       sessionStorage.removeItem("scrollTo");
       const el = document.getElementById(targetId);
       if (el) {
