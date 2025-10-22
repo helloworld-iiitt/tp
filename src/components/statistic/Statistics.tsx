@@ -1,6 +1,10 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import BarGraphContainer from "./BarGraph";
 import PieChartContainer from "./PieChart";
+import {cdnurl} from "@/components/ui/ImageLoader.tsx";
+import {quickLink2s} from "@/lib/constants/home.tsx";
+import {Button} from "@/components/ui/button.tsx";
+import { FileType} from "lucide-react";
 
 export default function Statistics() {
 
@@ -18,15 +22,19 @@ export default function Statistics() {
                     <PieChartContainer />
                     {/* </div> */}
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex">
+                    <div className="">
+                        <a href={`${cdnurl}/${quickLink2s[1].href}`} target="_blank" rel="noopener noreferrer">
+                            <Button variant='outline' className='w-[90%] sm:w-full'><FileType className='h-4 uppercase' />PLACEMENT POLICY 2025-26</Button>
+                        </a>
+                    </div>
                     <div className="w-full flex flex-col items-center text-center md:items-end">
-
                         <h1 className="font-semibold text-base md:text-xl">Internships for 2025 Batch</h1>
                         <h2 className="text-sm sm:text-base text-gray-600">Highest Stipend: 1,15,000/month</h2>
                     </div>
+
                 </CardFooter>
             </Card>
-            <p className="text-xs text-gray-500 mt-4 ml-3 text-left italic">* Data for students seeking or placed in jobs (excluding government roles).</p>
         </div >
     )
 }
