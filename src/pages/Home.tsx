@@ -10,64 +10,64 @@ import Statistics from "@/components/statistic/Statistics";
 import Gallary from "@/components/gallary/Gallary";
 
 export default function Home() {
-  useEffect(() => {
-    const targetId = sessionStorage.getItem("scrollTo");
-    if (targetId) {~
-      sessionStorage.removeItem("scrollTo");
-      const el = document.getElementById(targetId);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth" });
-        }, 300);
-      }
-    }
-  }, []);
+    useEffect(() => {
+        const targetId = sessionStorage.getItem("scrollTo");
+        if (targetId) {
+            sessionStorage.removeItem("scrollTo");
+            const el = document.getElementById(targetId);
+            if (el) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: "smooth" });
+                }, 300);
+            }
+        }
+    }, []);
 
-  return (
-    <>
-      <HeroSection />
+    return (
+        <>
+            <HeroSection />
 
-      <div id="about-us" className="container py-20 pt-20">
-        <AboutIIITT />
-      </div>
+            <div id="about-us" className="container py-20 pt-20">
+                <AboutIIITT />
+            </div>
 
-      <div className="bg-[#f8ffeb] py-20">
-        <div className="container">
-          <DeskPost />
-        </div>
-      </div>
+            <div className="bg-[#f8ffeb] py-20">
+                <div className="container">
+                    <DeskPost />
+                </div>
+            </div>
 
-      <div id="why-recruit" className="container py-20 pt-20">
-        <WhyRecruitUs />
-      </div>
+            <div id="why-recruit" className="container py-20 pt-20">
+                <WhyRecruitUs />
+            </div>
 
-      <div className="bg-[#f8ffeb] py-20">
-        <div className="container">
-          <Statistics />
-        </div>
-      </div>
+            <div className="bg-[#f8ffeb] py-20">
+                <div className="container">
+                    <Statistics />
+                </div>
+            </div>
 
-      <div className="container py-20">
-        <CompaniesCard />
-      </div>
+            <div className="container py-20">
+                <CompaniesCard />
+            </div>
 
-      <div id="teams" className="bg-[#f8ffeb] py-20 pt-20">
-        <div className="container">
-          <OfficerContainer />
-        </div>
-      </div>
+            <div id="teams" className="bg-[#f8ffeb] py-20 pt-20">
+                <div className="container">
+                    <OfficerContainer />
+                </div>
+            </div>
 
-      <div className="py-20">
-        <div className="container">
-          <StudentContainer />
-        </div>
-      </div>
+            <div className="py-20">
+                <div className="container">
+                    <StudentContainer />
+                </div>
+            </div>
 
-      <div className="bg-[#f8ffeb] py-20 pt-20">
-        <div className="container">
-          <Gallary />
-        </div>
-      </div>
-    </>
-  );
+            <div className="bg-[#f8ffeb] py-20 pt-20">
+                <div className="container">
+                    <Gallary />
+                </div>
+            </div>
+        </>
+    );
 }
