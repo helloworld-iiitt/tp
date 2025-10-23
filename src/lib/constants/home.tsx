@@ -1,5 +1,5 @@
 import { Bug, CodeXml, GraduationCap, Landmark, LineChart, PersonStanding, SmartphoneNfc, Wifi } from "lucide-react";
-import { Globe, Home, MessageCircle, Search, UserRound, Users, UserSearch } from 'lucide-react';
+import { Globe, Home, MessageCircle, Search, UserRound, Users, UserSearch ,FileType} from 'lucide-react';
 import { FileText, Linkedin, Mail, Phone, Twitter } from "lucide-react";
 
 // nav bar menu
@@ -112,8 +112,8 @@ export const barChartData = [
 ]
 
 export const pieChartData = [
-    { title: "placed", count: 40, fill: "#17726d" },
-    { title: "notPlaced", count: 60, fill: "#eae4d2" },
+    { title: "placed", count: 39, fill: "#17726d" },
+    { title: "notPlaced", count: 10, fill: "#eae4d2" },
 ]
 
 // teams
@@ -238,7 +238,7 @@ export const quickLink1s = [
 export const quickLink2s = [
     {
         icon: <FileText className='h-4' />,
-        href:"docs/IIITT 26 brochure.pdf",
+        href:"docs/Placement_Brochure_IIITT-26.pdf",
         //href: "/docs/Placement Brochure IIIT Trichy 2026.pdf",Note: Older Document
         title: "BROCHURE"
     },
@@ -247,11 +247,17 @@ export const quickLink2s = [
     //     href: "",
     //     title: "PLACEMENT DETAILS"
     // },
+
+    {
+        icon: <FileType className='h-4' />,
+        href: "docs/IIIT_Trichy_Placement_Policy_2025-26.pdf",
+        title: "PLACEMENT POLICY 2025-26"
+    },
     {
         icon: <Globe className='h-4' />,
         href: "http://iiitt.ac.in/",
         title: "iiitt.ac.in"
-    },
+    }
 ]
 
 // Gallary
