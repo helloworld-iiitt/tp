@@ -238,7 +238,7 @@ export const quickLink1s = [
 export const quickLink2s = [
     {
         icon: <FileText className='h-4' />,
-        href:"docs/Placement_Brochure_IIITT-26.pdf",
+        href:"docs/Placement Brochure IIIT Trichy 2026.pdf",
         //href: "/docs/Placement Brochure IIIT Trichy 2026.pdf",Note: Older Document
         title: "BROCHURE"
     },
