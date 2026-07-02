@@ -11,6 +11,12 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
+		"@fullcalendar/core": "^6.1.21",
+		"@fullcalendar/daygrid": "^6.1.21",
+		"@fullcalendar/google-calendar": "^6.1.21",
+		"@fullcalendar/list": "^6.1.21",
+		"@fullcalendar/react": "^6.1.21",
+		"@fullcalendar/timegrid": "^6.1.21",
 		"@radix-ui/react-dialog": "^1.1.1",
 		"@radix-ui/react-slot": "^1.1.0",
 		"class-variance-authority": "^0.7.0",

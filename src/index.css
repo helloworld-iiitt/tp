@@ -208,3 +208,30 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.fc .fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.fc .fc-button {
+  background: #2563eb !important;
+  border-color: #2563eb !important;
+}
+
+.fc .fc-button:hover {
+  background: #1d4ed8 !important;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: #e2e8f0;
+}
+
+.fc-daygrid-event {
+  border-radius: 6px;
+}
+
+.fc .fc-day-today {
+  background: #eff6ff !important;
+}

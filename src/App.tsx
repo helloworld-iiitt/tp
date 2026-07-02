@@ -5,6 +5,7 @@ import Nav from './components/header'
 import { motion } from 'framer-motion';
 import { lazy, Suspense } from 'react';
 import Loading from './components/ui/Loading';
+import Calender from "@/components/calender/Calender.tsx";
 
 const Home = lazy(() => import('./pages/Home'));
 const ForRecruiters = lazy(() => import('./pages/ForRecruiters'));
@@ -34,6 +35,7 @@ export default function App() {
               <Home />
             } />
             <Route path='/for-recruiters' element={<ForRecruiters />} />
+            <Route path='/calender' element={<Calender/>} />
           </Routes>
         </motion.div>
         <Footer />

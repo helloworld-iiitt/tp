@@ -23,6 +23,7 @@ export default function Home() {
     }
   }, []);
 
+
   return (
     <>
       <HeroSection />
@@ -68,6 +69,7 @@ export default function Home() {
           <Gallary />
         </div>
       </div>
+
     </>
   );
 }
