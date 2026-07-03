@@ -2,6 +2,7 @@ import HowToReach from '@/components/for-recruiters/HowToReach'
 import PlacemenrProcedure from '@/components/for-recruiters/PlacemenrProcedure';
 import { companies, companies1, companies2 } from '@/lib/constants/home'
 import Statistics from '@/components/statistic/Statistics';
+import ImageLoader from "@/components/ui/ImageLoader.tsx";
 
 
 export default function ForRecruiters() {
@@ -15,11 +16,9 @@ export default function ForRecruiters() {
                         {
                             [...companies, ...companies1, ...companies2].map((company, index) => (
                                 <div key={index} className='relative'>
-                                    <img
-                                        loading='lazy'
-                                        src={company}
-                                        alt="company"
-                                        className='object-scale-down mix-blend-color-burn- aspect-[3/2] h-24 w-32'
+                                    <ImageLoader
+                                        imgUrl={`/companies/${company}`}
+                                        className='object-scale-down mix-blend-color-burn- aspect-[3/2] mx-5 h-24 w-32'
                                     />
                                 </div>
                             ))

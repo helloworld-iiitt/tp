@@ -1,10 +1,11 @@
-import { navigation, quickLink1s, quickLink2s } from "@/lib/constants/home";
+import {  quickLink1s, quickLink2s } from "@/lib/constants/home";
 import { cdnurl } from "../ui/ImageLoader";
 
 const Footer = () => {
 
   return (
-    <div id="contact-us" className="bg-gray-50 ">
+    <div id="contact-us" className="bg-white ">
+
       <div className="container py-16 grid justify-items-center md:justify-items-start md:grid-cols-2 gap-x-20 gap-y-4 md:gap-y-0">
 
         {/* Left Section: Map + Socials */}
@@ -59,19 +60,6 @@ const Footer = () => {
         {/* Right Section: Navigations + Quick Links */}
         <section className="grid md:grid-cols-2 w-full gap-y-4 md:gap-y-0">
 
-          <ul className="relative text-center md:text-start">
-  <li className="mb-2 font-semibold">Navigations</li>
-  {navigation.map((nav, index) => (
-    <li key={index} className="mb-2 md:mb-5">
-      <a
-        href={nav.href}
-        className="text-offwhite text-sm font-normal mb-4 md:mb-6 space-links cursor-pointer"
-      >
-        {nav.name}
-      </a>
-    </li>
-  ))}
-</ul>
 
           {/* Quick Links */}
           <ul className="relative text-center md:text-start">
