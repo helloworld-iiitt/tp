@@ -8,7 +8,7 @@ export const navigation = [
     { name: 'About Us', href: '/#about-us', current: false, icon: <UserRound /> },
     { name: 'Why Recruit@IIITT', href: '/#why-recruit', current: false, icon: <Search /> },
     { name: 'For Recruiters', href: '/for-recruiters', current: false, icon: <UserSearch /> },
-    { name: 'Teams', href: '/#teams', current: false, icon: <Users /> },
+    { name: 'Our Team', href: '/ourteam', current: false, icon: <Users /> },
     {name: 'Calender', href: '/calender', current: false, icon: <Globe />},
     { name: 'Contact Us', href: '#contact-us', current: false, icon: <MessageCircle /> },
 

@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import AboutIIITT from "@/components/main/AboutIIITT";
 import DeskPost from "@/components/main/DeskPost";
 import HeroSection from "@/components/main/HeroSection";
-import OfficerContainer from "@/components/teams/OfficerContainer";
-import StudentContainer from "@/components/teams/StudentContainer";
 import WhyRecruitUs from "@/components/why-recruit-us/WhyUs";
 import CompaniesCard from "@/components/why-recruit-us/CompaniesCard";
 import Statistics from "@/components/statistic/Statistics";
@@ -50,18 +48,6 @@ export default function Home() {
 
       <div className="container py-20">
         <CompaniesCard />
-      </div>
-
-      <div id="teams" className="bg-[#f8ffeb] py-20 pt-20">
-        <div className="container">
-          <OfficerContainer />
-        </div>
-      </div>
-
-      <div className="py-20">
-        <div className="container">
-          <StudentContainer />
-        </div>
       </div>
 
       <div className="bg-[#f8ffeb] py-20 pt-20">

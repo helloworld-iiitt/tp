@@ -9,6 +9,7 @@ import Calender from "@/components/calender/Calender.tsx";
 
 const Home = lazy(() => import('./pages/Home'));
 const ForRecruiters = lazy(() => import('./pages/ForRecruiters'));
+const Team = lazy(() => import('./components/teams/index'));
 
 
 function Wrapper({ children }: { children: React.ReactNode }) {
@@ -36,6 +37,7 @@ export default function App() {
             } />
             <Route path='/for-recruiters' element={<ForRecruiters />} />
             <Route path='/calender' element={<Calender/>} />
+            <Route path='/ourteam' element={<Team/>} />
           </Routes>
         </motion.div>
         <Footer />

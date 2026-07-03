@@ -15,7 +15,10 @@ function ImageLoader({ imgUrl, className }: ImageLoaderProps) {
                 style: { transitionDelay: "0.5s" },
             }}
             effect="blur"
-            src={`${cdnurl}/${imgUrl}`}
+            src={imgUrl.startsWith('http')
+                ? imgUrl
+                : `${cdnurl}/${imgUrl}`
+            }
             alt={imgUrl}
             className={className}
         />

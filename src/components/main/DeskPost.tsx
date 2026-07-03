@@ -22,26 +22,21 @@ export default function DeskPost() {
                 <section className='relative flex items-center flex-col py-2'>
                     {/* <div className=' relative'> */}
                     <ImageLoader
-                        imgUrl='teams/director.png'
+                        imgUrl='http://store.iiitt.ac.in/images/admin/Director_2026/Prof%20(Dr.).%20Anupam%20Sukla_Sir.jpeg'
                         className='rounded-md object-contain h-[200px]'
                     />
                     {/* </div> */}
 
                     <div className='my-2 text-center'>
-                        <h1 className='text-green-500 font-bold text-base sm:text-lg text-center'>Prof. Usha Natesan</h1>
+                        <h1 className='text-green-500 font-bold text-base sm:text-lg text-center'>Prof. (Dr.) Anupam Shukla</h1>
                         <p className='text-sm text-gray-600'>
-                            Director, IIIT Tiruchirappalli
+                            Director (i/c), IIIT Tiruchirappalli
                         </p>
                     </div>
                 </section>
                 <section className=''>
                     <p className='text-base md:text-lg text-justify text-gray-600'>
-                        Indian Institute of Information Technology Tiruchirappalli (IIITT) is an
-                        initiative under the Public Private Partnership (PPP) model with a
-                        primary focus on addressing the challenges faced by the Indian IT
-                        industry and the growth of the domestic IT sector. IIITT attracts students
-                        from all over the country and abroad. The purpose of an institution of
-                        higher ...
+                        IIIT Tiruchirappalli is committed to academic excellence, innovation, and industry-oriented learning. Through a strong foundation in computer science, research, internships, and real-world problem solving, we prepare students to become technology leaders capable of addressing global challenges and creating meaningful impact ...
                         <Dialog>
                             <DialogTrigger asChild>
                                 <span className='border rounded px-2 m-2 cursor-pointer'>Read more</span>
@@ -49,51 +44,46 @@ export default function DeskPost() {
                             <DialogContent className="max-w-[94%] sm:max-w-[500px] md:max-w-[800px] overflow-y-auto h-[80vh] rounded px-2 sm:px-4 py-3">
                                 <DialogHeader>
                                     <p className='text-lg text-justify font-semibold text-gray-600'>
-                                        Messsage from THE DIRECTOR&apos;S DESK
+                                        Message from the Director
                                     </p>
                                 </DialogHeader>
                                 <section className='px-2 py-2'>
                                     <p className='text-base text-justify text-gray-600'>
-                                        Greetings from Indian Institute of Information Technology, Tiruchirappalli
+                                        Greetings from the Indian Institute of Information Technology, Tiruchirappalli.
                                     </p>
+
                                     <p className='text-base text-justify text-gray-600 my-4'>
-                                        Indian Institute of Information Technology Tiruchirappalli (IIITT) is an
-                                        initiative under the Public Private Partnership (PPP) model with a
-                                        primary focus on addressing the challenges faced by the Indian IT
-                                        industry and the growth of the domestic IT sector. IIITT attracts students
-                                        from all over the country and abroad. The purpose of an institution of
-                                        higher learning is  to impart/inculcate the best  of the academic
-                                        experience in a chosen discipline with specialized knowledge. The purpose of an institution of
-                                        higher learning is to impart/inculcate the best of the academic
-                                        experience in a chosen discipline with specialized knowledge in the
-                                        core curriculum for the initial 2 years and industry expertise within the
-                                        last 2 years. IIITT evolves into a milieu that dedicates itself to shaping
-                                        the students into better human beings and employable professionals
-                                        with local skills for global needs. The academic and internship
-                                        opportunities encourage student initiatives by engaging them in
-                                        cutting-edge technology research to meet the current needs and future
-                                        challenges of India and the world at large. The institute imparts
-                                        Information Technology education with practical experience to
-                                        students who will be future leaders with the ability to work in
-                                        challenging situations. A major objective in establishing IIITT is to set up
-                                        a model of education which can produce best-in-class human
-                                        resources in IT and harness the multidimensional facets of IT. While the
-                                        number of students produced would be small, the impact they create
-                                        would be great.
+                                        It is my privilege to serve as the Director (i/c) of IIIT Tiruchirappalli, an institution committed to excellence in education, research, innovation, and industry engagement. Since its inception, IIITT has established itself as a premier institute dedicated to nurturing future technology leaders equipped with strong technical foundations, research aptitude, and professional ethics.
                                     </p>
-                                    <p className='mt-2 text-justify text-gray-600 mb-4'>
-                                        Dear Recruiters, I am glad to invite you to recruit for the batch of 2025.
-                                        I believe that graduates of IIITT are talented enough to be your
-                                        professional partners in the future.
+
+                                    <p className='text-base text-justify text-gray-600 my-4'>
+                                        Our academic ecosystem emphasizes interdisciplinary learning, innovation-driven research, entrepreneurship, and meaningful industry collaboration. Through a carefully designed curriculum, hands-on projects, internships, and exposure to emerging technologies, we strive to prepare our students to address real-world challenges and contribute significantly to society and industry.
                                     </p>
-                                    <p className='text-base text-justify font-semibold text-gray-600'>
-                                        Prof. Usha Natesan
+
+                                    <p className='text-base text-justify text-gray-600 my-4'>
+                                        As we continue to align our initiatives with the vision of the National Education Policy (NEP) 2020, our focus remains on delivering comprehensive and integrative education while advancing high-quality research in Engineering, Science, and Technology. We are committed to fostering an environment that encourages creativity, innovation, leadership, and lifelong learning.
                                     </p>
-                                    <p className='text-base text-justify text-gray-600'>
-                                        Director
-                                        <br />
-                                        IIIT, Tiruchirappalli
+
+                                    <p className='text-base text-justify text-gray-600 my-4'>
+                                        I warmly invite recruiters and industry partners to engage with our talented students. The graduates of IIIT Tiruchirappalli possess strong analytical abilities, technical expertise, and a commitment to excellence. I am confident that they will become valuable contributors and future leaders within your organizations.
                                     </p>
+
+                                    <p className='mt-4 text-justify text-gray-600'>
+                                        We look forward to building long-term partnerships with organizations that share our vision of innovation, growth, and societal impact.
+                                    </p>
+
+                                    <div className='mt-6'>
+                                        <p className='text-base font-semibold text-gray-700'>
+                                            Prof. (Dr.) Anupam Shukla
+                                        </p>
+                                        <p className='text-base text-gray-600'>
+                                            Director (i/c)
+                                            <br />
+                                            IIIT Tiruchirappalli
+                                            <br />
+                                            director@iiitt.ac.in
+                                        </p>
+                                    </div>
                                 </section>
                             </DialogContent>
                         </Dialog>
@@ -142,7 +132,7 @@ export default function DeskPost() {
                             <DialogContent className="max-w-[94%] sm:max-w-[500px] md:max-w-[800px] overflow-y-auto max-h-[80vh] rounded-lg px-2 sm:px-4 py-3">
                                 <DialogHeader className=''>
                                     <p className='text-lg text-justify font-semibold text-gray-600'>
-                                        Messsage from TPO
+                                        Message from the Training & Placement Officer
                                     </p>
                                 </DialogHeader>
                                 <section className='px-2 py-2'>
