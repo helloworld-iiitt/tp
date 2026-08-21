@@ -108,14 +108,14 @@ export const companies2 = [
 
 // statistics
 export const barChartData = [
-    { title: "CSE", highCTC: 46.67, avgCTC: 18.35, medianCTC: 12 },
-    { title: "ECE", highCTC: 46.67, avgCTC: 20.12, medianCTC: 8 },
-    { title: "Overall", highCTC: 46.67, avgCTC: 18.035, medianCTC: 10.52 }
+    { title: "CSE", highCTC: 26, avgCTC: 10.8, medianCTC: 8 },
+    { title: "ECE", highCTC: 12.5, avgCTC: 8, medianCTC: 8 },
+    { title: "Overall", highCTC: 26, avgCTC: 9.96, medianCTC: 8}
 ]
 
 export const pieChartData = [
-    { title: "placed", count: 36, fill: "#17726d" },
-    { title: "notPlaced", count: 13, fill: "#eae4d2" },
+    { title: "placed", count: 43, fill: "#17726d" },
+    { title: "notPlaced", count: 62, fill: "#eae4d2" },
 ]
 
 // teams
@@ -131,70 +131,143 @@ export const heads = [
     }
 ];
 
-export const representatives = [ //NOTE: stored in /teams folder
+export const representatives = [
+    {
+        "name": "KANISHWAR S",
+        "role": "T&P Representative",
+        "imageUrl": "kanishwar.jpeg",
+        "email": "241123@iiitt.ac.in",
+        "phone": "9940683179",
+        "linkedinId": "kanishwar-s-a72b48340"
+    },
+    {
+        "name": "VIGNESH R.S",
+        "role": "T&P Representative",
+        "imageUrl": "vignesh.jpeg",
+        "email": "rsvignesh141@gmail.com",
+        "phone": "7339161651",
+        "linkedinId": "vignesh-r-s-74285b332"
+    },
+    {
+        "name": "ARUNDHATHI M",
+        "role": "T&P Representative",
+        "imageUrl": "arundhathi.jpeg",
+        "email": "241107@iiitt.ac.in",
+        "phone": "8015361484",
+        "linkedinId": "arundhathi-mohan-1b0456336"
+    },
+    {
+        "name": "BHUVAN M ACHARYA",
+        "role": "T&P Representative",
+        "imageUrl": "bhuvan.jpg",
+        "email": "bhuvanm200623@gmail.com",
+        "phone": "9606654776",
+        "linkedinId": "bhuvan-m-acharya-7b9256335"
+    },
+    {
+        "name": "RAJ ARYAN MAHATO",
+        "role": "Student and Corporate Relations",
+        "imageUrl": "raj.jpg",
+        "email": "251145@iiitt.ac.in",
+        "phone": "7488620573",
+        "linkedinId": "raj-aryan-mahato-630724369"
+    },
+    {
+        "name": "AMIRTHABALU BALAMURUGAN",
+        "role": "Student and Corporate Relations",
+        "imageUrl": "amirthabalu.png",
+        "email": "251301@iiitt.ac.in",
+        "phone": "9361157855",
+        "linkedinId": "amirthabalu-balamurugan-20528b383"
+    },
+    {
+        "name": "NITISH SHIVRAM YADAV",
+        "role": "Student and Corporate Relations",
+        "imageUrl": "nitish.jpg",
+        "email": "251420@iiitt.ac.in",
+        "phone": "7620481441",
+        "linkedinId": "nitish-yadav-a0ab653a5"
+    },
+    {
+        "name": "K YS JAGANMOHAN REDDY",
+        "role": "Email Tracking",
+        "imageUrl": "reddy.jpg",
+        "email": "251411@iiitt.ac.in",
+        "phone": "7569271958",
+        "linkedinId": "karra-yeduguri-sandinti-jagan-mohan-reddy-05ba38409"
+    },
 
-    // {
-    //     name: "HEMANSHU CHOUDHARY",
-    //     role: "T&P Representative",
-    //     imageUrl: "hemanshu.jpg",
-    //     email: "221220@iiitt.ac.in",
-    //     phone: "7021552408",
-    //     linkedinId: "hemanshuchoudhary",
-    // },
-    // {
-    //     name: "KOSHTUBH SHARAN RAJ",
-    //     role: "T&P Representative",
-    //     imageUrl: "koustubh.jpg",
-    //     email: "252203@iiitt.ac.in",
-    //     phone: "8448771138",
-    //     linkedinId: "koshtubh-raj-556a8424a",
-    // },
     {
-        name: "ARVIND MISHRA",
-        role: "T&P Representative",
-        imageUrl: "arvind.jpg",
-        email: "221207@iiitt.ac.in",
-        phone: "8005542019",
-        linkedinId: "arvind-mishra-34b560257",
+        "name": "JEYAPRAKAASH P S",
+        "role": "Data management",
+        "imageUrl": "jeyaprakaash.jpg",
+        "email": "251222@iiitt.ac.in",
+        "phone": "9361274646",
+        "linkedinId": "jeyaprakaash-ps-7552a537b"
     },
     {
-        name: "CHARAN PAL",
-        role: "T&P Representative",
-        imageUrl: "charan.jpg",
-        email: "242201@iiitt.ac.in",
-        phone: "9701422789",
-        linkedinId: "charan-pal-74710a244",
-    }, {
-        name: "RITUL MISHRA",
-        role: "T&P Representative",
-        imageUrl: "ritul.jpg",
-        email: "221243@iiitt.ac.in",
-        phone: "8755862526",
-        linkedinId: "ritul-mishra-6783b4269",
+        "name": "AYUSH KUNTAL",
+        "role": "Data management",
+        "imageUrl": "ayush.jpg",
+        "email": "251306@iiitt.ac.in",
+        "phone": "9625911049",
+        "linkedinId": "ayush-kuntal-381279378"
     },
     {
-        name: "PRATEEK GAURAV",
-        role: "T&P Representative",
-        imageUrl: "prateek_gaurav.jpg",
-        email: "242103@iiitt.ac.in",
-        phone: "8093297445",
-        linkedinId: "prateekgaurav7296",
+        "name": "SWATI SINGH",
+        "role": "Samarth ERP",
+        "imageUrl": "swati.jpg",
+        "email": "251256@iiitt.ac.in",
+        "phone": "8409490131",
+        "linkedinId": "swati-singh-5b67ba381"
     },
     {
-        name: "KANISHWAR S",
-        role: "T&P Representative",
-        imageUrl: "kanishwar.jpeg",
-        email: "241123@iiitt.ac.in",
-        phone: "9940683179",
-        linkedinId: "kanishwar-s-a72b48340",
+        "name": "NARESH ARVINDH T",
+        "role": "Samarth ERP",
+        "imageUrl": "naresh.jpg",
+        "email": "251321@iiitt.ac.in",
+        "phone": "8754063641",
+        "linkedinId": "naresh-arvindh-t-1b3947380"
     },
     {
-        name: "VIGNESH R S",
-        role: "T&P Representative",
-        imageUrl: "vignesh.jpeg",
-        email: "241159@iiitt.ac.in",
-        phone: "7339161651",
-        linkedinId: "vignesh-r-s-74285b332",
+        "name": "PURAMSETTI LAKSHMI KEERTHI",
+        "role": "Email Tracking",
+        "imageUrl": "lakshmi.jpg",
+        "email": "251244@iiitt.ac.in",
+        "phone": "9391288622",
+        "linkedinId": "lakshmi-keerthi-puramsetti-8103b236a"
+    },
+    {
+        "name": "MINHA FATHIMA KP",
+        "role": "Email Tracking",
+        "imageUrl": "minha.jpg",
+        "email": "251229@iiitt.ac.in",
+        "phone": "9605791103",
+        "linkedinId": ""
+    },
+    {
+        "name": "THANUJ IMAYAVARAMBAN M",
+        "role": "Website Management",
+        "imageUrl": "thanuj.jpeg",
+        "email": "251332@iiitt.ac.in",
+        "phone": "7339003506",
+        "linkedinId": "thanuj-imayavaramban-m-0a12b0380"
+    },
+    {
+        "name": "ANANYA RAJ",
+        "role": "Website Management",
+        "imageUrl": "ananya.jpg",
+        "email": "251205@iiitt.ac.in",
+        "phone": "9341671705",
+        "linkedinId": "ananya-raj-49bb1a42b"
+    },
+    {
+        "name": "BADHRINATH NAGIDI",
+        "role": "Event and Calender Management",
+        "imageUrl": "badhrinath.jpeg",
+        "email": "badhrinath1207@gmail.com",
+        "phone": "8008299967",
+        "linkedinId": "badhrinath-nagidi-8ab78937a"
     }
 ];
 

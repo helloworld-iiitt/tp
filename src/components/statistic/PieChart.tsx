@@ -19,8 +19,10 @@ const chartConfig = {
     },
 } satisfies ChartConfig;
 
-const perPlaced = (pieChartData[0].count / pieChartData.reduce((acc, curr) => acc + curr.count, 0)) * 100 || 100;
-
+const perPlaced =                                                           //formula to calulate percentage of placed students
+    Math.round(
+        (pieChartData[0].count / pieChartData.reduce((acc, curr) => acc + curr.count, 0)) * 100 * 10
+    ) / 10 || 100;
 
 
 export default function PieChartContainer() {
