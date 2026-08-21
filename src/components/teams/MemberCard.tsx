@@ -48,7 +48,7 @@ export default function MemberCard({ idx, name, role, imageUrl, linkedinUrl, pho
                     <div className={`${styles.circle} ${isHovered ? styles.circlehover + " rounded-none object-fill m-0 border-none w-[180px] h-[180px]" : "m-[25px] border-4 shadow-lg border-white overflow-hidden object-fill h-[140px] w-[140px]"} relative`}
                     >
                         <ImageLoader
-                            imgUrl={`teams/${imageUrl}`}
+                            imgUrl={`teams/2026-27/${imageUrl}`}
                             className='h-40 w-48 object-fill'
                         />               </div>
                 </CardHeader>
@@ -60,12 +60,12 @@ export default function MemberCard({ idx, name, role, imageUrl, linkedinUrl, pho
   className={`flex flex-col items-center justify-center gap-2 text-[#808080] ${isHovered ? "text-white" : ""}`}
 >
   {/* Phone Number (visible as text + clickable) */}
-  <div className="flex items-center gap-2">
-    <Phone className="h-5 w-5" />
-    <a href={"tel:+91" + phone.split(",")[0]} className="text-base font-medium">
-      +91 {phone.split(",")[0]}
-    </a>
-  </div>
+                    {(role === "T&P Representative" || role === "Student and Corporate Relations" || role ==="Training and Placement Officer") && (<div className="flex items-center gap-2">
+                        <Phone className="h-5 w-5"/>
+                        <a href={"tel:+91" + phone.split(",")[0]} className="text-base font-medium">
+                            +91 {phone.split(",")[0]}
+                        </a>
+                    </div>)}
 
   {/* Social Icons (LinkedIn + Email) */}
   <section className="flex justify-center items-center gap-6 mt-2">
@@ -93,9 +93,11 @@ export default function MemberCard({ idx, name, role, imageUrl, linkedinUrl, pho
     </a>
 
     {/* Email */}
-    <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
-      <Mail className="h-7 w-7" />
-    </a>
+      {(role === "T&P Representative" || role ==="Training and Placement Officer" || role ==="Student and Corporate Relations") && (
+          <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
+              <Mail className="h-7 w-7" />
+          </a>
+      )}
   </section>
 </CardFooter>
             </Card>

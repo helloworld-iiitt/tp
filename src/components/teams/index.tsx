@@ -10,6 +10,7 @@ const Index = () => {
                         <OfficerContainer />
                     </div>
                 </div>
+
                 <div className="container  pt-10">
                     <StudentContainer />
                 </div>
