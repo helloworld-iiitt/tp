@@ -119,16 +119,34 @@ export const pieChartData = [
 ]
 
 // teams
+// teams
+
+export const director = {
+    name: "Prof. (Dr.) Anupam Shukla",
+    role: "Director (i/c), IIIT Tiruchirappalli",
+    imageUrl: "director.jpg",
+    email: "director@iiitt.ac.in",
+};
+
 export const heads = [
     {
-        name: "Dr. Anoop Jacob Thomas",
+        name: "Dr. Dhanalakshimi",
+        designation: "Associate Professor",
+        department: "Department of CSE",
         role: "Training and Placement Officer",
-        imageUrl: "anoop.jpg",
-        email: "placement@iiitt.ac.in",
-        phone: "7696265939",
-        linkedinId: "anoopjt",
-
-    }
+        imageUrl: "dhanalakshimi.jpg",
+        email: "dhanalakshimi@iiitt.ac.in",
+        phone: "9894366200",
+    },
+    {
+        name: "Dr. Senthil Sivakumar",
+        designation: "Assistant Professor",
+        department: "Department of ECE",
+        role: "Training and Placement Officer",
+        imageUrl: "senthil-sivakumar.jpg",
+        email: "msenthilsivakumar@iiitt.ac.in",
+        phone: "9380984544",
+    },
 ];
 
 export const representatives = [
