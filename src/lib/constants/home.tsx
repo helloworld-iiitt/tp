@@ -134,7 +134,7 @@ export const heads = [
         designation: "Associate Professor",
         department: "Department of CSE",
         role: "Training and Placement Officer",
-        imageUrl: "dhanalakshimi.jpg",
+        imageUrl: "dhanalakshimi.jpeg",
         email: "dhanalakshimi@iiitt.ac.in",
         phone: "9894366200",
     },
@@ -143,7 +143,7 @@ export const heads = [
         designation: "Assistant Professor",
         department: "Department of ECE",
         role: "Training and Placement Officer",
-        imageUrl: "senthil-sivakumar.jpg",
+        imageUrl: "senthil-sivakumar.jpeg",
         email: "msenthilsivakumar@iiitt.ac.in",
         phone: "9380984544",
     },
@@ -234,7 +234,7 @@ export const representatives = [
     {
         "name": "SWATI SINGH",
         "role": "Samarth ERP",
-        "imageUrl": "swati.jpg",
+        "imageUrl": "swathi.jpg",
         "email": "251256@iiitt.ac.in",
         "phone": "8409490131",
         "linkedinId": "swati-singh-5b67ba381"
@@ -316,19 +316,12 @@ export const quickLink1s = [
 export const quickLink2s = [
     {
         icon: <FileText className='h-4' />,
-        href:"docs/Placement Brochure IIIT Trichy 2026.pdf",
-        //href: "/docs/Placement Brochure IIIT Trichy 2026.pdf",Note: Older Document
+        href:"docs/Placement_Brochure_IIIT_Trichy_2026-27.pdf",
         title: "BROCHURE"
     },
-    // {
-    //     icon: <ArrowDownToLine className='h-4' />,
-    //     href: "",
-    //     title: "PLACEMENT DETAILS"
-    // },
-
     {
         icon: <FileType className='h-4' />,
-        href: "docs/IIIT_Trichy_Placement_Policy_2025-26.pdf",
+        href: "docs/IIIT_Trichy_Placement_Policy.pdf",
         title: "PLACEMENT POLICY 2025-26"
     },
     {
