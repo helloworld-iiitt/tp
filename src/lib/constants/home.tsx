@@ -233,7 +233,7 @@ export const representatives = [
     },
     {
         "name": "SWATI SINGH",
-        "role": "Samarth ERP",
+        "role": "ERP",
         "imageUrl": "swathi.jpg",
         "email": "251256@iiitt.ac.in",
         "phone": "8409490131",
@@ -241,7 +241,7 @@ export const representatives = [
     },
     {
         "name": "NARESH ARVINDH T",
-        "role": "Samarth ERP",
+        "role": "ERP",
         "imageUrl": "naresh.jpg",
         "email": "251321@iiitt.ac.in",
         "phone": "8754063641",
@@ -321,7 +321,7 @@ export const quickLink2s = [
     },
     {
         icon: <FileType className='h-4' />,
-        href: "docs/IIIT_Trichy_Placement_Policy.pdf",
+        href: "clear",
         title: "PLACEMENT POLICY 2025-26"
     },
     {

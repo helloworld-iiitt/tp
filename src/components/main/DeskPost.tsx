@@ -183,8 +183,8 @@ export default function DeskPost() {
                             className="flex flex-col items-center"
                         >
                             <ImageLoader
-                                imgUrl={head.imageUrl}
-                                className="rounded-md object-contain h-[180px] w-[150px]"
+                                imgUrl={"teams/2026-27/"+head.imageUrl}
+                                className="rounded-md object-fill h-[180px] w-[160px]"
                             />
 
                             <div className="my-2 text-center">
