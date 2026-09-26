@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/card";
 import styles from "@/styles/MemberCard.module.css";
 import { useState } from "react";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import { cdnurl } from "../ui/ImageLoader";
 import ImageLoader from "../ui/ImageLoader";
@@ -21,25 +21,27 @@ const patterns = [
 ];
 
 export default function MemberCard({
-    idx,
-    name,
-    designation,
-    department,
-    role,
-    imageUrl,
-    phone,
-    email,
-    showContact = true,
-}: {
-    idx: number;
-    name: string;
-    designation?: string;
-    department?: string;
-    role: string;
-    imageUrl: string;
-    phone?: string;
-    email?: string;
-    showContact?: boolean;
+                                       idx,
+                                       name,
+                                       designation,
+                                       department,
+                                       role,
+                                       imageUrl,
+                                       phone,
+                                       email,
+                                       showContact = true,
+                                       linkedinUrl
+                                   }: {
+    idx: number,
+    name: string,
+    designation?: string,
+    department?: string,
+    role: string,
+    imageUrl: string,
+    phone?: string,
+    email?: string,
+    showContact?: boolean,
+    linkedinUrl?: string
 }) {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -79,7 +81,7 @@ export default function MemberCard({
                         className={`${styles.circle} ${
                             isHovered
                                 ? styles.circlehover +
-                                  " rounded-none object-fill m-0 border-none w-[180px] h-[180px]"
+                                " rounded-none object-fill m-0 border-none w-[180px] h-[180px]"
                                 : "m-[25px] border-4 shadow-lg border-white overflow-hidden object-fill h-[140px] w-[140px]"
                         } relative`}
                     >
@@ -147,18 +149,33 @@ export default function MemberCard({
                             </div>
                         )}
 
-                        {/* Email */}
-                        {email && (
-                            <section className="flex justify-center items-center gap-6 mt-2">
+                        <div className="flex items-center justify-center gap-6 mt-2">
+                            {/* Email */}
+                            {email && (
                                 <a
                                     href={`mailto:${email}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    aria-label={`Email ${name}`}
+                                    className="transition-transform duration-200 hover:scale-110"
                                 >
                                     <Mail className="h-7 w-7" />
                                 </a>
-                            </section>
-                        )}
+                            )}
+
+                            {/* LinkedIn */}
+                            {linkedinUrl && (
+                                <a
+                                    href={`https://www.linkedin.com/in/${linkedinUrl}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={`LinkedIn profile of ${name}`}
+                                    className="transition-transform duration-200 hover:scale-110"
+                                >
+                                    <Linkedin className="h-7 w-7" />
+                                </a>
+                            )}
+                        </div>
+
+
                     </CardFooter>
                 )}
             </Card>
